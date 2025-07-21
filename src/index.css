@@ -18,3 +18,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+#primary-btn {
+    border: 2px solid transparent;
+    border-radius: 50em;
+    background:
+        linear-gradient(#01000f, #01000f) padding-box,
+        linear-gradient(to bottom, #006fff, #7800d3) border-box;
+    cursor: pointer;
+}
