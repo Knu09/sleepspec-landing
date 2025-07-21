@@ -1,3 +1,5 @@
+import PrimaryButton from "./PrimaryButton";
+
 const HeroSection = () => {
     return (
         <div className="container mx-auto py-40">
@@ -8,7 +10,7 @@ const HeroSection = () => {
                         <span>SleepSpec</span>
                     </h1>
                 </div>
-                <div>
+                <div className="flex flex-col gap-4">
                     <div>
                         <p className="font-publicsans font-light text-xl text-secondary opacity-80">
                             Powered by AI and advanced voice analysis that
@@ -16,7 +18,9 @@ const HeroSection = () => {
                             your voice.
                         </p>
                     </div>
-                    <div></div>
+                    <div className="flex flex-row justify-center">
+                        <PrimaryButton title="Download APK" />
+                    </div>
                 </div>
             </div>
         </div>
