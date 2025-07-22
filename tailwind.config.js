@@ -11,7 +11,7 @@ export default {
                 primary: "#7800D3",
                 secondary: "#DDDDDD",
                 primaryBlue: "#006FFF",
-                cyan: "#3AC8D9",
+                primaryCyan: "#3AC8D9",
                 danger: "#FF2121",
                 darkBg: "#01000F",
                 lightBg: "#F1F5FD",
