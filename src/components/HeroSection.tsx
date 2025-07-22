@@ -6,7 +6,7 @@ const HeroSection = () => {
         <div className="relative container mx-auto py-40">
             <div className="flex flex-col text-center gap-14 mx-auto xl:w-8/12 z-30">
                 <div>
-                    <h1 className="font-publicsans font-bold text-6xl leading-tight">
+                    <h1>
                         Detect Sleep Deprivation Through Your Voice with{" "}
                         <span className="bg-[linear-gradient(to_right,_theme(colors.primaryBlue)_90%,_theme(colors.darkBg)_100%)] text-transparent bg-clip-text">
                             SleepSpec
@@ -15,7 +15,7 @@ const HeroSection = () => {
                 </div>
                 <div className="flex flex-col gap-8">
                     <div className="mx-auto md:w-9/12">
-                        <p className="font-publicsans font-light text-xl text-secondary opacity-80">
+                        <p>
                             Powered by AI and advanced voice analysis that
                             detects signs of mild sleep deprivation using just
                             your voice.
