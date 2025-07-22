@@ -22,7 +22,7 @@ const Navbar = () => {
                         />
                     </div>
                     <div>
-                        <ul className="hidden md:flex gap-4">
+                        <ul className="hidden md:flex gap-5">
                             {navItems.map((item, index) => (
                                 <li key={index}>
                                     <a
