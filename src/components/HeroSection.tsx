@@ -27,9 +27,10 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            {/* Glowing light */}
-            <div className="absolute z-0 left-2/4 top-[100px] w-72 h-72 bg-primary opacity-25 blur-[80px]"></div>
-            <div className="absolute z-0 left-[30%] top-[200px] w-72 h-72 bg-primaryBlue opacity-25 blur-[80px]"></div>
+            {/* Glowing Ellipse */}
+            <div className="absolute z-0 left-[50%] top-[230px] w-64 h-64 bg-primary opacity-25 blur-[80px]"></div>
+            <div className="absolute z-0 left-[25%] top-[300px] w-64 h-64 bg-primaryBlue opacity-25 blur-[80px]"></div>
+            <div className="absolute z-0 right-0 top-0 w-40 h-40 bg-[#3AC8D9] opacity-15 blur-[60px]"></div>
         </div>
     );
 };
