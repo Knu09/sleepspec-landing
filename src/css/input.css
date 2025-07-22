@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+    h1 {
+        @apply font-publicsans font-bold text-6xl leading-tight;
+    }
+    p {
+        @apply font-publicsans font-light text-xl text-secondary opacity-80;
+    }
+}
+
+@layer components {
+}
