@@ -27,3 +27,11 @@
         linear-gradient(to bottom, #006fff, #7800d3) border-box;
     cursor: pointer;
 }
+
+#secondary-btn {
+    border: 1px solid #585858;
+    border-opacity: 50;
+    border-radius: 50em;
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
