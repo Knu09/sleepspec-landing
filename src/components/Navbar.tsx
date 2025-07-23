@@ -11,7 +11,7 @@ const Navbar = () => {
         setDrawerOpen(!drawerOpen);
     };
     return (
-        <nav className="sticky top-0 z-50 py-6 backdrop-blur-lg">
+        <nav className="sticky top-0 z-50 py-6 bg-darkLayer bg-opacity-80 bg-clip-padding backdrop-blur-lg">
             <div className="container px-4 mx-auto relative ">
                 <div className="flex justify-between items-center">
                     <div>

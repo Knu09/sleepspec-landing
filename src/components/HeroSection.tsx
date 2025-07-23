@@ -3,7 +3,7 @@ import SecondaryButton from "./SecondaryButton";
 
 const HeroSection = () => {
     return (
-        <div id="hero" className="relative container mx-auto py-40">
+        <div id="hero" className="relative container mx-auto pt-40 pb-72">
             <div className="flex flex-col text-center gap-14 mx-auto xl:w-8/12 z-30">
                 <div>
                     <h1>
