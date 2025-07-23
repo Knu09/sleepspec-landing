@@ -2,7 +2,7 @@ import { featItems } from "../constants/constant";
 
 const FeatureSection = () => {
     return (
-        <div className="bg-white text-darkBg">
+        <div id="feature" className="bg-white text-darkBg">
             <div className="container mx-auto py-20">
                 <div className="flex flex-col gap-10">
                     <div className="flex flex-col gap-6">

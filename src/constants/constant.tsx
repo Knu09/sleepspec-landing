@@ -1,10 +1,10 @@
 import voiceBased from "../assets/svg/voice-based.svg";
 
 export const navItems = [
-    { label: "Features", href: "#" },
-    { label: "How It Works", href: "#" },
-    { label: "Model", href: "#" },
-    { label: "Contact", href: "#" },
+    { label: "Features", href: "#feature" },
+    { label: "How it works", href: "#how-it-works" },
+    { label: "Model", href: "#model" },
+    { label: "Contact", href: "#contact" },
 ];
 
 export const featItems = [

@@ -3,12 +3,12 @@ import SecondaryButton from "./SecondaryButton";
 
 const HeroSection = () => {
     return (
-        <div className="relative container mx-auto py-40">
+        <div id="hero" className="relative container mx-auto py-40">
             <div className="flex flex-col text-center gap-14 mx-auto xl:w-8/12 z-30">
                 <div>
                     <h1>
                         Detect Sleep Deprivation Through Your Voice with{" "}
-                        <span className="bg-[linear-gradient(to_right,_theme(colors.primaryBlue)_90%,_theme(colors.darkBg)_100%)] text-transparent bg-clip-text">
+                        <span className="bg-[linear-gradient(to_right,_theme(colors.primaryBlue)_0%,_theme(colors.primaryCyan)_50%,_theme(colors.primary)_100%)] text-transparent bg-clip-text">
                             SleepSpec
                         </span>
                     </h1>
@@ -23,7 +23,7 @@ const HeroSection = () => {
                     </div>
                     <div className="flex flex-row justify-center gap-4">
                         <PrimaryButton text="Download APK" href="#" />
-                        <SecondaryButton text="Learn More" href="#" />
+                        <SecondaryButton text="Learn More" href="#feature" />
                     </div>
                 </div>
             </div>
