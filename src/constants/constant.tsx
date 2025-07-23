@@ -1,4 +1,9 @@
 import voiceBased from "../assets/svg/voice-based.svg";
+import aiIcon from "../assets/svg/ai-icon.svg";
+import reliableIcon from "../assets/svg/reliable-icon.svg";
+import mobileOptIcon from "../assets/svg/mobile-optimized-icon.svg";
+import scientificIcon from "../assets/svg/scientific-icon.svg";
+import secureIcon from "../assets/svg/secure-icon.svg";
 
 export const navItems = [
     { label: "Features", href: "#feature" },
@@ -16,35 +21,35 @@ export const featItems = [
             "Analyze your voice to identify signs of mild sleep deprivation in seconds.",
     },
     {
-        icon: "",
+        icon: aiIcon,
         alt: "ai",
         heading: "AI-Powered SVM Model",
         paragraph:
             "Uses a state-of-the-art Support Vector Machine trained on spectro-temporal modulation patterns.",
     },
     {
-        icon: "",
+        icon: reliableIcon,
         alt: "reliable",
         heading: "Reliable Sleep Assessment",
         paragraph:
             "Get results within a couple of seconds after uploading your voice — no wearables required.",
     },
     {
-        icon: "",
+        icon: mobileOptIcon,
         alt: "mobile-optimized",
         heading: "Mobile-Optimized Experience",
         paragraph:
             "Designed for smooth performance and clarity on Android devices.",
     },
     {
-        icon: "",
+        icon: scientificIcon,
         alt: "scientific",
         heading: "Scientifically Validated Accuracy",
         paragraph:
             "Achieves an average accuracy of 86% — validated through academic research.",
     },
     {
-        icon: "",
+        icon: secureIcon,
         alt: "secure",
         heading: "Secure Data Processing",
         paragraph:
