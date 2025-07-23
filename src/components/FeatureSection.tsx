@@ -2,7 +2,7 @@ import { featItems } from "../constants/constant";
 
 const FeatureSection = () => {
     return (
-        <div id="feature" className="bg-white text-darkBg">
+        <div id="feature" className="bg-white text-darkBg px-5">
             <div className="container mx-auto py-20">
                 <div className="flex flex-col gap-10">
                     <div className="flex flex-col gap-6">
@@ -22,7 +22,7 @@ const FeatureSection = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="grid grid-cols-3 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-12 lg:gap-x-18 gap-y-6 gap-x-16">
                         {featItems.map((item, idx) => (
                             <div
                                 className="border border-divider/50 rounded-xl pt-4 pb-12 px-4"
