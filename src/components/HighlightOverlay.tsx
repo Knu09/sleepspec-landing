@@ -1,10 +1,37 @@
-import homePagePhone from "../assets/svg/home-phone.svg";
+import iphoneFrame from "../assets/phone_entries/iphone_frame.png";
+import homePhone from "../assets/phone_entries/sleepspec_interface_entry_02.jpg";
+import languagePhone from "../assets/phone_entries/sleepspec_interface_entry_01.jpg";
+import recordPhone from "../assets/phone_entries/sleepspec_interface_entry_03.jpg";
 
 const HighlightOverlay = () => {
     return (
-        <div className="relative bg-white h-96">
-            <div className="absolute top-[20%] left-[50%] -translate-x-1/2 -translate-y-1/2">
-                <img src={homePagePhone} alt="home-page-phone" />
+        <div className="hidden md:flex bg-white px-5">
+            <div className="relative container mx-auto h-96">
+                <div className="absolute top-[10%] left-0 xl:translate-x-1/2 -translate-y-1/2 bg-transparent z-10">
+                    <img src={iphoneFrame} alt="iphone-frame" className="" />
+                    <img
+                        src={recordPhone}
+                        alt="home-phone"
+                        className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 -z-10 rounded-2xl shadow-2xl"
+                    />
+                </div>
+                <div className="absolute top-[20%] left-[50%] -translate-x-1/2 -translate-y-1/2 bg-transparent z-20">
+                    <img src={iphoneFrame} alt="iphone-frame" className="" />
+                    <img
+                        src={homePhone}
+                        alt="home-phone"
+                        className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 -z-10 rounded-2xl shadow-2xl"
+                    />
+                </div>
+
+                <div className="absolute top-[10%] right-0 xl:-translate-x-1/2 -translate-y-1/2 bg-transparent z-10">
+                    <img src={iphoneFrame} alt="iphone-frame" className="" />
+                    <img
+                        src={languagePhone}
+                        alt="home-phone"
+                        className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 -z-10 rounded-2xl shadow-2xl"
+                    />
+                </div>
             </div>
         </div>
     );
