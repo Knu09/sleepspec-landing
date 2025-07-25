@@ -49,7 +49,7 @@ const HowItWorksSection = () => {
                                     </div>
                                 </div>
                                 <div className="flex flex-col bg-darkLayer text-secondary p-4 rounded-xl gap-3 w-fit md:w-full">
-                                    <h3>Language Selection</h3>
+                                    <h4>Language Selection</h4>
                                     <img
                                         src={languageSelection}
                                         alt="language_selection"
@@ -77,7 +77,7 @@ const HowItWorksSection = () => {
                                         </div>
                                     </div>
                                     <div className="flex flex-col bg-darkLayer text-secondary p-4 rounded-xl gap-3">
-                                        <h3>Displayed Script</h3>
+                                        <h4>Displayed Script</h4>
                                         <img
                                             src={recordEntry}
                                             alt="record-entry"
@@ -105,7 +105,7 @@ const HowItWorksSection = () => {
                                         </div>
                                     </div>
                                     <div className="flex flex-col bg-darkLayer text-secondary p-4 rounded-xl gap-3">
-                                        <h3>Submission and Process</h3>
+                                        <h4>Submission and Process</h4>
                                         <img
                                             src={submitButtonEntry}
                                             alt="submit-button-entry"
