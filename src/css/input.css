@@ -9,6 +9,9 @@
     h2 {
         @apply font-publicsans font-medium text-3xl;
     }
+    h3 {
+        @apply font-publicsans font-bold text-lg;
+    }
     p {
         @apply font-publicsans font-light text-xl text-secondary opacity-80;
     }
