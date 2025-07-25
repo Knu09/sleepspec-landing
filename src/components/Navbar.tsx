@@ -14,13 +14,13 @@ const Navbar = () => {
         <nav className="sticky top-0 z-50 py-6 bg-darkLayer bg-opacity-80 bg-clip-padding backdrop-blur-lg">
             <div className="container px-4 mx-auto relative ">
                 <div className="flex justify-between items-center">
-                    <div>
+                    <a href="/">
                         <img
                             src={logo}
                             className="w-10 "
                             alt="SleepSpec Logo"
                         />
-                    </div>
+                    </a>
                     <div>
                         <ul className="hidden md:flex gap-5">
                             {navItems.map((item, index) => (
@@ -38,7 +38,7 @@ const Navbar = () => {
                     <div>
                         <a
                             className="gap-3 hidden md:flex items-center"
-                            href="#"
+                            href="#get-the-app"
                         >
                             <img
                                 src={downloadIcon}
