@@ -1,5 +1,6 @@
 import HeroSection from "./components/HeroSection";
 import FeatureSection from "./components/FeatureSection";
+import HowItWorksSection from "./components/HowItWorksSection";
 import Navbar from "./components/Navbar";
 import HighlightOverlay from "./components/HighlightOverlay";
 
@@ -11,6 +12,7 @@ function App() {
                 <HeroSection />
                 <HighlightOverlay />
                 <FeatureSection />
+                <HowItWorksSection />
             </section>
         </>
     );
