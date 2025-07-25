@@ -25,7 +25,7 @@ const FeatureSection = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-12 lg:gap-x-18 gap-y-6 gap-x-16">
                         {featItems.map((item, idx) => (
                             <div
-                                className="border border-divider/50 rounded-xl pt-4 pb-12 px-4"
+                                className="rounded-xl pt-4 pb-12 px-4 bg-white hover:bg-divider/5 hover:shadow-xl hover:scale-105 hover:-translate-y-2 transition-all ease-in-out delay-150 cursor-default"
                                 key={idx}
                             >
                                 <img src={item.icon} alt={item.alt} />
