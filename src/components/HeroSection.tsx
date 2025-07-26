@@ -1,5 +1,6 @@
 import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
+import androidIcon from "../assets/android-icon.png";
 
 const HeroSection = () => {
     return (
@@ -22,7 +23,11 @@ const HeroSection = () => {
                         </p>
                     </div>
                     <div className="flex flex-row justify-center gap-4">
-                        <PrimaryButton text="Download APK" href="#" />
+                        <PrimaryButton
+                            text="Download APK"
+                            href="#"
+                            img={androidIcon}
+                        />
                         <SecondaryButton text="Learn More" href="#feature" />
                     </div>
                 </div>
