@@ -3,6 +3,7 @@ import FeatureSection from "./components/FeatureSection";
 import HowItWorksSection from "./components/HowItWorksSection";
 import GetAppSection from "./components/GetAppSection.tsx";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer.tsx";
 import HighlightOverlay from "./components/HighlightOverlay";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
                 <FeatureSection />
                 <HowItWorksSection />
                 <GetAppSection />
+                <Footer />
             </section>
         </>
     );
