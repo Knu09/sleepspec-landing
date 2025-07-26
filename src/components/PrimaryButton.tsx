@@ -1,11 +1,10 @@
-import androidIcon from "../assets/android-icon.png";
-
 type PrimaryButtonProps = {
     text: string;
     href: string;
+    img?: string;
 };
 
-const PrimaryButton = ({ text, href }: PrimaryButtonProps) => {
+const PrimaryButton = ({ text, href, img }: PrimaryButtonProps) => {
     return (
         <a
             href={href}
@@ -13,7 +12,7 @@ const PrimaryButton = ({ text, href }: PrimaryButtonProps) => {
             id="primary-btn"
             type="button"
         >
-            <img src={androidIcon} alt="android" />
+            <img src={img} alt="android" />
             <span className="text-lg font-publicsans font-medium">{text}</span>
         </a>
     );
