@@ -1,6 +1,6 @@
 import transparentLogo from "../assets/svg/transparent_logo_sleepspec_.svg";
 import appEntriesMask from "../assets/phone_entries/sleepspec_entries_mask.png";
-import androidIcon from "../assets/android-icon.png";
+
 const GetAppSection = () => {
     return (
         <div id="get-the-app" className="px-2 sm:px-5 bg-white">
