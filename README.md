@@ -1,69 +1,67 @@
-# React + Vite + TailwindCSS + TypeScript + SWC
+# SleepSpec Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SleepSpec is a mobile application that detects mild sleep deprivation using voice-based analysis powered by Support Vector Machines (SVM) and spectro-temporal modulation features. This repository contains the landing page for the SleepSpec mobile app, built with modern frontend tools for speed, responsiveness, and maintainability.
 
-Currently, two official plugins are available:
+<img width="1904" height="958" alt="250726_22h20m15s_screenshot" src="https://github.com/user-attachments/assets/ea912e99-17b8-4433-be5b-c9acec919bd6" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
 
-## Expanding the ESLint configuration
+This landing page introduces SleepSpec’s features, workflow, and scientific background, offering users a clear call to action to download the APK and learn about our voice-based sleep health screening system.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+This project is built using the following technologies:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- ⚛️ **React** — UI Library for building components
+- ⚡ **Vite** — Lightning-fast build tool and development server
+- 🎨 **TailwindCSS** — Utility-first CSS framework for styling
+- 🧪 **TypeScript** — Strongly-typed JavaScript
+- 🚀 **SWC** — Super-fast compiler for modern JavaScript and TypeScript
+
+---
+
+## 📦 Installation
+
+Clone the repository and install the dependencies:
+
+```bash
+git clone https://github.com/your-username/sleepspec-landing.git
+cd sleepspec-landing
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Development
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+To start the development server:
+```bash
+npm run dev
 ```
+
+---
+
+## Project Structure
+
+```bash
+src/
+├── assets/           # Logos and images
+├── components/       # Reusable components (Navbar, Button, etc.)
+├── constants/        # Static data (nav items, etc.)
+├── App.tsx           # Main app component
+├── main.tsx          # Entry point
+index.html            # Main HTML template
+tailwind.config.ts    # Tailwind config
+vite.config.ts        # Vite config
+```
+
+## License 
+
+This project is part of the undergraduate thesis developed by 16kHz Labs and is intended for academic and demonstration purposes.
+
+## Contact
+
+For inquiries, collaborations, or feedback, reach us at:
+📧 sleepspec.contact@gmail.com
