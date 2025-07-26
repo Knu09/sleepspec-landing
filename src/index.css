@@ -29,7 +29,12 @@
 }
 
 #secondary-btn {
+    transition: background-color 150ms ease-in-out;
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 50em;
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#secondary-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15);
 }
