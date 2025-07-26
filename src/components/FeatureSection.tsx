@@ -8,7 +8,7 @@ const FeatureSection = () => {
                     <div className="flex flex-col gap-6">
                         <div className="rounded-full px-5 py-2 w-fit bg-primaryBlue/25">
                             <span className="font-poppins text-primaryBlue font-medium">
-                                FEATURE
+                                FEATURES
                             </span>
                         </div>
                         <div className="flex flex-col w-8/12 gap-3">
