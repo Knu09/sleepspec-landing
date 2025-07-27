@@ -11,7 +11,7 @@ const FeatureSection = () => {
                                 FEATURES
                             </span>
                         </div>
-                        <div className="flex flex-col w-8/12 gap-3">
+                        <div className="flex flex-col w-full sm:w-8/12 gap-3">
                             <h1 className="leading-none">
                                 Unlock the Power of SleepSpec Technology
                             </h1>

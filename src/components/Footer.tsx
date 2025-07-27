@@ -28,7 +28,7 @@ const Footer = () => {
                             </div>
                             <div className="flex flex-col sm:flex-row gap-3">
                                 <input
-                                    className="font-publicsans text-xl bg-secondary/10 pl-8 pr-16 py-4 rounded-full border border-white/20 outline-none focus:outline focus:outline-2 focus:outline-white/50"
+                                    className="font-publicsans text-xl bg-secondary/10 px-8 sm:pr-16 py-4 rounded-full border border-white/20 outline-none focus:outline focus:outline-2 focus:outline-white/50 w-full"
                                     placeholder="Enter your Email"
                                     type="text"
                                 />

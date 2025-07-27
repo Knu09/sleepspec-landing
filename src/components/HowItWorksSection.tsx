@@ -53,11 +53,11 @@ const HowItWorksSection = () => {
                                     <img
                                         src={languageSelection}
                                         alt="language_selection"
-                                        className="rounded-lg max-w-[272px]"
+                                        className="rounded-lg sm:max-w-[272px]"
                                     />
                                 </div>
                             </div>
-                            <div className="flex flex-row gap-5 bg-white text-darkBg rounded-2xl px-5 lg:px-9 py-7 w-full md:w-8/12">
+                            <div className="flex flex-col md:flex-row gap-5 bg-white text-darkBg rounded-2xl px-5 lg:px-9 py-7 w-full md:w-8/12">
                                 <div className="flex flex-col gap-6">
                                     <div className="flex flex-col gap-4">
                                         <div className="flex flex-col lg:flex-row gap-4 lg:items-center">
