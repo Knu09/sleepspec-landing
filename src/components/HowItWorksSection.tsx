@@ -7,7 +7,7 @@ import entry_05 from "../assets/phone_entries/how_it_works_entry_05.jpg";
 
 const HowItWorksSection = () => {
     return (
-        <div id="how-it-works" className="px-5">
+        <div id="how-it-works" className="px-1 sm:px-5">
             <div className="container mx-auto py-20">
                 <div className="flex flex-col gap-10">
                     <div className="flex flex-col items-center gap-6">

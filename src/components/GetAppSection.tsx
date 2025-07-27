@@ -4,7 +4,7 @@ import appEntriesMask from "../assets/phone_entries/sleepspec_entries_mask.png";
 const GetAppSection = () => {
     return (
         <div id="get-the-app" className="px-1 sm:px-5 bg-white">
-            <div className="container mx-auto py-32">
+            <div className="container mx-auto py-32 pb-16">
                 <div className="relative flex flex-row bg-darkBg rounded-3xl">
                     <div className="p-6 sm:p-10 w-full md:w-10/12 lg:w-8/12 xl:w-6/12 bg-darkBg rounded-3xl md:rounded-r-none z-30 bg-opacity-80 backdrop-blur-[2px]">
                         <div className="absolute -top-6 -left-5">
