@@ -4,8 +4,8 @@ import PrimaryButton from "./PrimaryButton";
 const Footer = () => {
     return (
         <div className="bg-darkBg py-16">
-            <div className="container mx-auto flex flex-col">
-                <div className="flex flex-row justify-between">
+            <div className="container mx-auto px-8 flex flex-col">
+                <div className="flex flex-col lg:flex-row justify-center items-start lg:justify-between gap-8">
                     <div className="flex flex-col gap-4">
                         <div className="flex flex-row items-center gap-3">
                             <img src={sleepspecLogo} alt="sleepspec" />
@@ -16,8 +16,8 @@ const Footer = () => {
                         <div className="max-w-[500px]">
                             <p>
                                 An intelligent, voice-based companion designed
-                                to help monitor and manage your sleep health
-                                with confidence.
+                                to detect your sleep health status with
+                                confidence.
                             </p>
                         </div>
                     </div>
@@ -26,7 +26,7 @@ const Footer = () => {
                             <div>
                                 <h4 className="footer-header">Stay Updated</h4>
                             </div>
-                            <div className="flex flex-row gap-3">
+                            <div className="flex flex-col sm:flex-row gap-3">
                                 <input
                                     className="font-publicsans text-xl bg-secondary/10 pl-8 pr-16 py-4 rounded-full border border-white/20 outline-none focus:outline focus:outline-2 focus:outline-white/50"
                                     placeholder="Enter your Email"
@@ -39,17 +39,17 @@ const Footer = () => {
                 </div>
                 {/* Divider */}
                 <div className="w-full h-[1px] bg-white/25 my-10"></div>
-                <div className="flex flex-row justify-between">
-                    <div className="flex flex-row gap-3">
-                        <span className="bg-white/10 px-3 py-4 font-medium text-lg rounded-full h-fit">
+                <div className="flex flex-col md:flex-row justify-between items-center sm:items-start gap-8">
+                    <div className="flex flex-col sm:flex-row gap-3 order-2 md:order-1">
+                        <span className="bg-white/10 p-4 font-medium text-lg rounded-full h-fit w-fit">
                             © 2025 SleepSpec
                         </span>
-                        <span className="bg-white/10 px-3 py-4 font-medium text-lg rounded-full h-fit">
+                        <span className="bg-white/10 p-4 font-medium text-lg rounded-full h-fit w-fit">
                             All Rights Reserved
                         </span>
                     </div>
-                    <div className="flex flex-row">
-                        <div className="flex flex-col gap-4">
+                    <div className="flex flex-row order-1 md:order-2">
+                        <div className="flex flex-col gap-4 text-center sm:text-start">
                             <span className="footer-header">Contact Info</span>
 
                             <a href="#" className="flex items-center gap-3">
