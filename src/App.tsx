@@ -5,6 +5,7 @@ import GetAppSection from "./components/GetAppSection.tsx";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer.tsx";
 import HighlightOverlay from "./components/HighlightOverlay";
+import TeamSection from "./components/TeamSection.tsx";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                 <HighlightOverlay />
                 <FeatureSection />
                 <HowItWorksSection />
+                <TeamSection />
                 <GetAppSection />
                 <Footer />
             </section>
