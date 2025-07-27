@@ -4,6 +4,7 @@ import reliableIcon from "../assets/svg/reliable-icon.svg";
 import mobileOptIcon from "../assets/svg/mobile-optimized-icon.svg";
 import scientificIcon from "../assets/svg/scientific-icon.svg";
 import secureIcon from "../assets/svg/secure-icon.svg";
+import christianPic from "../assets/christian.png";
 
 export const navItems = [
     { label: "Features", href: "#feature" },
@@ -54,5 +55,56 @@ export const featItems = [
         heading: "Secure Data Processing",
         paragraph:
             "Ensures your audio is only used for analysis with no cloud-based storage or sharing.",
+    },
+];
+
+export const teamItems = [
+    {
+        img: christianPic,
+        name: "Christian",
+        role: "Team Leader & Developer",
+        course: "Computer Science Student",
+        social: [
+            {
+                icon: "fa-brands fa-github",
+                link: "https://github.com/Knu09",
+            },
+            {
+                icon: "fa-solid fa-link",
+                link: "https://knu09.github.io/v2.christiandelatorre/",
+            },
+        ],
+    },
+    {
+        img: christianPic,
+        name: "Gian Frans",
+        role: "Data Analyst",
+        course: "Computer Science Student",
+        social: [
+            {
+                icon: "fa-brands fa-github",
+                link: "https://github.com/Knu09",
+            },
+            {
+                icon: "fa-solid fa-link",
+                link: "https://knu09.github.io/v2.christiandelatorre/",
+            },
+        ],
+    },
+    {
+        img: christianPic,
+        name: "Rafael",
+        role: "Technical Analyst",
+        course: "Computer Science Student",
+        social: [
+            {
+                icon: "fa-brands fa-github",
+                link: "https://github.com/Knu09",
+            },
+            {
+                icon: "fa-solid fa-link",
+                link: "https://knu09.github.io/v2.christiandelatorre/",
+            },
+        ],
     },
 ];
