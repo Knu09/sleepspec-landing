@@ -7,10 +7,10 @@
         @apply font-publicsans font-bold text-[clamp(2rem,5vw,3.8rem)] leading-tight;
     }
     h2 {
-        @apply font-publicsans font-medium text-3xl;
+        @apply font-publicsans font-semibold text-3xl;
     }
     h3 {
-        @apply font-publicsans font-bold text-4xl;
+        @apply font-publicsans font-bold leading-tight text-[clamp(2rem,5vw,3.25rem)];
     }
     h4 {
         @apply font-publicsans font-bold text-lg;
