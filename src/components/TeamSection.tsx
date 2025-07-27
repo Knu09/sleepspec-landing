@@ -87,7 +87,7 @@ const TeamSection = () => {
                                                                 key={idx}
                                                                 href={item.link}
                                                                 target="_blank"
-                                                                className="flex rounded-full bg-secondary w-6 h-6 p-4 items-center justify-center"
+                                                                className="flex rounded-full bg-secondary w-8 h-8 p-2 items-center justify-center hover:opacity-80"
                                                             >
                                                                 <i
                                                                     className={
