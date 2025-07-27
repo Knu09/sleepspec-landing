@@ -4,7 +4,7 @@
 
 @layer base {
     h1 {
-        @apply font-publicsans font-bold text-6xl leading-tight;
+        @apply font-publicsans font-bold text-[clamp(2rem,5vw,3.8rem)] leading-tight;
     }
     h2 {
         @apply font-publicsans font-medium text-3xl;
@@ -19,7 +19,7 @@
         @apply font-publicsans font-medium text-[22px];
     }
     p {
-        @apply font-publicsans font-light text-xl text-secondary opacity-80;
+        @apply font-publicsans font-light text-lg text-secondary opacity-80;
     }
 }
 
