@@ -56,25 +56,60 @@ const TeamSection = () => {
 
                         <div className="flex flex-row flex-wrap justify-center px-8 gap-8 mt-6">
                             {teamItems.map((item, idx) => (
-                                <div
-                                    key={idx}
-                                    className="flex flex-col gap-4 items-center"
-                                >
-                                    <div className="w-[250px] h-[250px] bg-darkBg rounded-3xl rounded-tl-none aspect-square">
-                                        <img
-                                            className="w-full h-full rounded-3xl object-cover"
-                                            src={item.img}
-                                            alt=""
-                                        />
+                                <div className="relative group rounded-xl rounded-tl-none overflow-hidden shadow-lg border border-1 border-darkBg/20">
+                                    <div
+                                        key={idx}
+                                        className="flex flex-col gap-4 items-center pb-4"
+                                    >
+                                        <div className="w-[250px] h-[250px] bg-darkBg rounded-t-xl rounded-tl-none aspect-square m-1">
+                                            <img
+                                                className="w-full h-full rounded-xl object-cover"
+                                                src={item.img}
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div className="flex flex-col items-center gap-2 text-center">
+                                            <h4 className="border border-1 border-darkBg/50 rounded-full py-2 px-4">
+                                                {item.name}
+                                            </h4>
+                                            <span className="font-light">
+                                                {item.role}
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div className="flex flex-col items-center gap-2 text-center">
-                                        <h4 className="border border-1 border-darkBg/50 rounded-full py-2 px-4">
-                                            {item.name}
-                                        </h4>
-                                        <span className="font-light">
-                                            {item.role}
-                                        </span>
+                                    <div className="absolute left-0 right-0 top-[110%] h-full bg-darkBg/80 rounded-xl rounded-tl-none transition-all delay-150 duration-500 ease-in-out backdrop-blur-sm blur-lg group-hover:top-0 group-hover:blur-none">
+                                        <div className="flex flex-col h-full justify-between p-6">
+                                            <div className="">
+                                                <div className="flex flex-row gap-3">
+                                                    {item.social.map(
+                                                        (item, idx) => (
+                                                            <a
+                                                                key={idx}
+                                                                href={item.link}
+                                                                target="_blank"
+                                                                className="flex rounded-full bg-secondary w-6 h-6 p-4 items-center justify-center"
+                                                            >
+                                                                <i
+                                                                    className={
+                                                                        item.icon
+                                                                    }
+                                                                ></i>
+                                                            </a>
+                                                        ),
+                                                    )}
+                                                </div>
+                                            </div>
+                                            <div className="flex flex-col items-center gap-2 text-center text-secondary">
+                                                <h4 className="border border-1 border-white/50 rounded-full py-2 px-4">
+                                                    {item.name}
+                                                </h4>
+                                                <span className="font-light">
+                                                    {item.course}
+                                                </span>
+                                            </div>
+                                        </div>
                                     </div>
+                                    {/* <div className="absolute left-0 right-0 top-0 bottom-0 h-full rounded-xl rounded-tl-none transition-all delay-150 duration-500 ease-in-out border border-1 border-darkBg/50"></div> */}
                                 </div>
                             ))}
                         </div>
