@@ -3,10 +3,10 @@ import appEntriesMask from "../assets/phone_entries/sleepspec_entries_mask.png";
 
 const GetAppSection = () => {
     return (
-        <div id="get-the-app" className="px-2 sm:px-5 bg-white">
+        <div id="get-the-app" className="px-1 sm:px-5 bg-white">
             <div className="container mx-auto py-32">
                 <div className="relative flex flex-row bg-darkBg rounded-3xl">
-                    <div className="px-8 sm:p-10 w-full md:w-10/12 lg:w-8/12 xl:w-6/12 bg-darkBg rounded-3xl md:rounded-r-none z-30 bg-opacity-80 backdrop-blur-[2px]">
+                    <div className="p-6 sm:p-10 w-full md:w-10/12 lg:w-8/12 xl:w-6/12 bg-darkBg rounded-3xl md:rounded-r-none z-30 bg-opacity-80 backdrop-blur-[2px]">
                         <div className="absolute -top-6 -left-5">
                             <img
                                 className="w-[250px] sm:w-fit"
@@ -15,7 +15,7 @@ const GetAppSection = () => {
                             />
                         </div>
                         <div className="flex flex-col gap-10 py-14">
-                            <div className="flex flex-col gap-8 text-center sm:text-start">
+                            <div className="flex flex-col gap-8 text-start">
                                 <h3>
                                     Your Personal Sleep Checker, Always Within
                                     Reach
@@ -31,7 +31,7 @@ const GetAppSection = () => {
                             <div className="flex flex-col sm:flex-row gap-x-4 gap-y-6 items-center sm:items-start">
                                 <a
                                     href="#"
-                                    className="z-30 flex flex-row items-center gap-4 px-10 py-4 rounded-full text-center w-fit"
+                                    className="z-30 flex flex-row items-center gap-4 px-10 py-4 rounded-full text-center"
                                     id="primary-btn"
                                     type="button"
                                 >
@@ -43,7 +43,7 @@ const GetAppSection = () => {
                                         </span>
                                     </div>
                                 </a>
-                                <div className="relative w-fit">
+                                <div className="relative">
                                     <button
                                         className="z-30 flex items-center gap-4 px-10 py-4 rounded-full cursor-not-allowed shadow-[3px_4px_10px_rgba(0,0,0,0.25)]"
                                         id="secondary-btn"
