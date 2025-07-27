@@ -8,7 +8,11 @@ const GetAppSection = () => {
                 <div className="relative flex flex-row bg-darkBg rounded-3xl">
                     <div className="px-8 sm:p-10 w-full md:w-10/12 lg:w-8/12 xl:w-6/12 bg-darkBg rounded-3xl md:rounded-r-none z-30 bg-opacity-80 backdrop-blur-[2px]">
                         <div className="absolute -top-6 -left-5">
-                            <img src={transparentLogo} alt="sleepspec-logo" />
+                            <img
+                                className="w-[250px] sm:w-fit"
+                                src={transparentLogo}
+                                alt="sleepspec-logo"
+                            />
                         </div>
                         <div className="flex flex-col gap-10 py-14">
                             <div className="flex flex-col gap-8 text-center sm:text-start">
@@ -55,10 +59,9 @@ const GetAppSection = () => {
                                     </button>
 
                                     <div
-                                        className="absolute -top-1 -right-4
+                                        className="absolute -bottom-3 -right-4
                                         bg-[#F7083B] text-white shadow-xl px-4 py-2 cursor-not-allowed rounded-full
-                                        font-publicsans font-bold text-sm
-                                        rotate-12 animate-pulse"
+                                        font-publicsans font-bold text-sm animate-pulse"
                                     >
                                         Coming&nbsp;Soon
                                     </div>
