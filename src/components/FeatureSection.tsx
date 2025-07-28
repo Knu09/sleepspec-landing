@@ -22,13 +22,17 @@ const FeatureSection = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-12 lg:gap-x-18 gap-y-6 gap-x-16">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-6 sm:gap-6 xl:gap-14">
                         {featItems.map((item, idx) => (
                             <div
                                 className="rounded-xl pt-4 pb-12 px-4 bg-divider/5 hover:bg-divider/2 hover:shadow-xl hover:scale-105 hover:-translate-y-2 transition-all ease-in-out delay-150 cursor-default"
                                 key={idx}
                             >
-                                <img src={item.icon} alt={item.alt} />
+                                <img
+                                    className="w-12 md:w-fit"
+                                    src={item.icon}
+                                    alt={item.alt}
+                                />
                                 <div className="mt-4 flex flex-col gap-3">
                                     <h2>{item.heading}</h2>
                                     <p className="text-darkBg">
