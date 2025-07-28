@@ -1,5 +1,6 @@
 import transparentLogo from "../assets/svg/transparent_logo_sleepspec_.svg";
 import appEntriesMask from "../assets/phone_entries/sleepspec_entries_mask.png";
+import androidIcon from "../assets/android-icon.png";
 
 const GetAppSection = () => {
     return (
@@ -35,7 +36,12 @@ const GetAppSection = () => {
                                     id="primary-btn"
                                     type="button"
                                 >
-                                    <i className="fa-brands fa-android text-3xl"></i>
+                                    {/* <i className="fa-brands fa-android text-3xl"></i> */}
+                                    <img
+                                        src={androidIcon}
+                                        alt="android-icon"
+                                        width={30}
+                                    />
                                     <div className="flex flex-col text-lg font-publicsans leading-tight">
                                         <span>Download for</span>
                                         <span className="font-bold">
