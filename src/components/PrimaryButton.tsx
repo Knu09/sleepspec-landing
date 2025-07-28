@@ -12,7 +12,7 @@ const PrimaryButton = ({ text, href, img }: PrimaryButtonProps) => {
             id="primary-btn"
             type="button"
         >
-            {img && <img src={img} alt={img} />}
+            {img && <img src={img} alt={img} width={25} />}
             <span className="text-lg font-publicsans font-medium">{text}</span>
         </a>
     );
