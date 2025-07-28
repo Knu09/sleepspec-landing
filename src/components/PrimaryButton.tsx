@@ -8,7 +8,7 @@ const PrimaryButton = ({ text, href, img }: PrimaryButtonProps) => {
     return (
         <a
             href={href}
-            className="z-30 flex flex-row items-center gap-4 px-10 py-4 rounded-full text-center"
+            className="z-30 flex flex-row items-center gap-4 px-6 py-4 rounded-full text-center w-fit"
             id="primary-btn"
             type="button"
         >

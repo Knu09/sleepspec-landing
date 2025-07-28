@@ -7,7 +7,7 @@ const SecondaryButton = ({ text, href }: SecondaryButtonProps) => {
     return (
         <a
             href={href}
-            className="z-30 flex flex-row justify-center items-center gap-3 px-6 py-3 rounded-full"
+            className="z-30 flex flex-row justify-center items-center gap-3 px-6 py-4 rounded-full w-fit"
             id="secondary-btn"
             type="button"
         >
