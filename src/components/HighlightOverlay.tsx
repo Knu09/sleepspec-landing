@@ -1,36 +1,34 @@
-import iphoneFrame from "../assets/phone_entries/iphone_frame.png";
-import homePhone from "../assets/phone_entries/sleepspec_interface_entry_02.jpg";
-import languagePhone from "../assets/phone_entries/sleepspec_interface_entry_01.jpg";
-import recordPhone from "../assets/phone_entries/sleepspec_interface_entry_03.jpg";
+import iphoneFrame from "../assets/svg/iphone_frame.svg";
+import homePhone from "../assets/phone_entries/sleepspec_interface_entry_02.png";
+import languagePhone from "../assets/phone_entries/sleepspec_interface_entry_01.png";
+import recordPhone from "../assets/phone_entries/sleepspec_interface_entry_03.png";
 
 const HighlightOverlay = () => {
+    const SIZE = 300;
     return (
         <div className="hidden md:flex bg-white px-5">
             <div className="relative container mx-auto h-96">
-                <div className="absolute top-[15%] left-0 xl:translate-x-1/2 -translate-y-1/2 bg-transparent z-10 transition-all ease-in-out delay-100 duration-500 hover:scale-105 hover:z-50">
-                    <img src={iphoneFrame} alt="iphone-frame" />
-                    <img
-                        src={recordPhone}
-                        alt="home-phone"
-                        className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 -z-10 rounded-2xl shadow-2xl"
-                    />
+                <div
+                    className="absolute top-[15%] left-0 xl:translate-x-1/2 -translate-y-1/2 bg-transparent z-10 transition-all ease-in-out delay-100 duration-500 hover:scale-105 hover:z-40 group"
+                    style={{ width: SIZE }}
+                >
+                    <img src={recordPhone} alt="record-phone" />
+                    <div className="absolute top-[50%] left-[50%] bg-white -translate-x-1/2 -translate-y-1/2 -z-10 transition-all ease-in-out delay-100 duration-500 rounded-[45px] shadow-sm group-hover:shadow-2xl w-[97%] h-[97%]"></div>
                 </div>
-                <div className="absolute top-[25%] left-[50%] -translate-x-1/2 -translate-y-1/2 bg-transparent z-20 transition-all ease-in-out delay-100 duration-500 hover:scale-105 hover:z-50">
-                    <img src={iphoneFrame} alt="iphone-frame" className="" />
-                    <img
-                        src={homePhone}
-                        alt="home-phone"
-                        className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 -z-10 rounded-2xl shadow-2xl"
-                    />
+                <div
+                    className="absolute top-[25%] left-[50%] -translate-x-1/2 -translate-y-1/2 bg-transparent z-20 transition-all ease-in-out delay-100 duration-500 hover:scale-105 hover:z-40 group"
+                    style={{ width: SIZE }}
+                >
+                    <img src={homePhone} alt="home-phone" />
+                    <div className="absolute top-[50%] left-[50%] bg-white -translate-x-1/2 -translate-y-1/2 -z-10 transition-all ease-in-out delay-100 duration-500 rounded-[45px] shadow-sm group-hover:shadow-2xl w-[97%] h-[97%]"></div>
                 </div>
 
-                <div className="absolute top-[15%] right-0 xl:-translate-x-1/2 -translate-y-1/2 bg-transparent z-10 transition-all ease-in-out delay-100 duration-500 hover:scale-105 hover:z-50">
-                    <img src={iphoneFrame} alt="iphone-frame" className="" />
-                    <img
-                        src={languagePhone}
-                        alt="home-phone"
-                        className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 -z-10 rounded-2xl shadow-2xl"
-                    />
+                <div
+                    className="absolute top-[15%] right-0 xl:-translate-x-1/2 -translate-y-1/2 bg-transparent z-10 transition-all ease-in-out delay-100 duration-500 hover:scale-105 hover:z-40 group"
+                    style={{ width: SIZE }}
+                >
+                    <img src={languagePhone} alt="language-phone" />
+                    <div className="absolute top-[50%] left-[50%] bg-white -translate-x-1/2 -translate-y-1/2 -z-10 transition-all ease-in-out delay-100 duration-500 rounded-[45px] shadow-sm group-hover:shadow-2xl w-[97%] h-[97%]"></div>
                 </div>
             </div>
         </div>
