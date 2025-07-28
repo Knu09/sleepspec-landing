@@ -4,7 +4,7 @@ import languagePhone from "../assets/phone_entries/sleepspec_interface_entry_01.
 import recordPhone from "../assets/phone_entries/sleepspec_interface_entry_03.png";
 
 const HighlightOverlay = () => {
-    const SIZE = 300;
+    const SIZE = 320;
     return (
         <div className="hidden md:flex bg-white px-5">
             <div className="relative container mx-auto h-96">
