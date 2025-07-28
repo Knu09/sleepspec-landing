@@ -77,7 +77,7 @@ const TeamSection = () => {
                                             </span>
                                         </div>
                                     </div>
-                                    <div className="absolute left-0 right-0 top-[110%] h-full bg-darkBg/80 rounded-xl rounded-tl-none transition-all delay-150 duration-500 ease-in-out backdrop-blur-sm blur-lg group-hover:top-0 group-hover:blur-none">
+                                    <div className="absolute left-0 right-0 top-0 h-full opacity-0 bg-darkBg/80 rounded-xl rounded-tl-none transition-all delay-150 duration-350 ease-in-out backdrop-blur-sm blur-lg group-hover:opacity-100 group-hover:blur-none">
                                         <div className="flex flex-col h-full justify-between p-6">
                                             <div className="">
                                                 <div className="flex flex-row gap-3">
