@@ -5,6 +5,8 @@ import mobileOptIcon from "../assets/svg/mobile-optimized-icon.svg";
 import scientificIcon from "../assets/svg/scientific-icon.svg";
 import secureIcon from "../assets/svg/secure-icon.svg";
 import christianPic from "../assets/christian.png";
+import gianPic from "../assets/gian.png";
+import rafaelPic from "../assets/refael.png";
 
 export const navItems = [
     { label: "Features", href: "#feature" },
@@ -76,34 +78,34 @@ export const teamItems = [
         ],
     },
     {
-        img: christianPic,
+        img: gianPic,
         name: "Gian Frans",
         role: "Data Analyst",
         course: "Computer Science Student",
         social: [
             {
                 icon: "fa-brands fa-github",
-                link: "https://github.com/Knu09",
+                link: "",
             },
             {
                 icon: "fa-solid fa-link",
-                link: "https://knu09.github.io/v2.christiandelatorre/",
+                link: "",
             },
         ],
     },
     {
-        img: christianPic,
+        img: rafaelPic,
         name: "Rafael",
         role: "Technical Analyst",
         course: "Computer Science Student",
         social: [
             {
                 icon: "fa-brands fa-github",
-                link: "https://github.com/Knu09",
+                link: "",
             },
             {
                 icon: "fa-solid fa-link",
-                link: "https://knu09.github.io/v2.christiandelatorre/",
+                link: "",
             },
         ],
     },
