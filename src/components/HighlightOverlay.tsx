@@ -1,4 +1,3 @@
-import iphoneFrame from "../assets/svg/iphone_frame.svg";
 import homePhone from "../assets/phone_entries/sleepspec_interface_entry_02.png";
 import languagePhone from "../assets/phone_entries/sleepspec_interface_entry_01.png";
 import recordPhone from "../assets/phone_entries/sleepspec_interface_entry_03.png";
