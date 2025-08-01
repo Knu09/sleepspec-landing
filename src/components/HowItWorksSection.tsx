@@ -33,7 +33,7 @@ const HowItWorksSection = () => {
                     </div>
                     <div className="flex flex-col gap-4 lg:gap-8">
                         <div className="flex flex-col md:flex-row gap-6 text-secondary rounded-2xl px-5 lg:px-9 py-7 w-full">
-                            <div className="flex flex-col justify-center gap-4 w-6/12">
+                            <div className="flex flex-col justify-center items-center md:items-start text-center md:text-start gap-4 w-full md:w-6/12">
                                 <div className="flex gap-3 items-center">
                                     <div className="flex bg-secondary rounded-full min-w-[40px] h-[40px] justify-center items-center">
                                         <span className="font-poppins font-semibold text-2xl text-darkBg">
@@ -42,7 +42,7 @@ const HowItWorksSection = () => {
                                     </div>
                                     <h2>Choose Your Language</h2>
                                 </div>
-                                <div>
+                                <div className="max-w-[450px]">
                                     <p className="text-secondary">
                                         Select your preferred script language
                                         (English or Filipino) to read from
@@ -50,7 +50,7 @@ const HowItWorksSection = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="relative flex flex-col justify-center items-center text-secondary p-4 rounded-xl gap-3 w-6/12">
+                            <div className="relative flex flex-col justify-center items-center text-secondary p-4 rounded-xl gap-3 w-full md:w-6/12">
                                 <div className="relative">
                                     {/* Background white div */}
                                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[45px] shadow-xl w-[96%] h-[97%] bg-white z-20"></div>
@@ -64,7 +64,7 @@ const HowItWorksSection = () => {
                                 </div>
 
                                 {/* Entry backdrop */}
-                                <div className="absolute bottom-20 z-0 w-full lg:max-w-[500px] h-[280px] lg:h-[350px] bg-[linear-gradient(145deg,_theme(colors.primaryBlue)_0%,_theme(colors.primary)_50%,_theme(colors.primaryCyan)_100%)] rounded-2xl"></div>
+                                <div className="absolute bottom-20 z-0 w-full max-w-[350px] lg:max-w-[500px] h-[280px] lg:h-[350px] bg-[linear-gradient(145deg,_theme(colors.primaryBlue)_0%,_theme(colors.primary)_50%,_theme(colors.primaryCyan)_100%)] rounded-2xl"></div>
                             </div>
                         </div>
                         <div className="flex flex-col md:flex-row gap-5 bg-white text-darkBg rounded-2xl px-5 lg:px-9 py-7 w-full md:w-8/12">
