@@ -1,4 +1,4 @@
-import languageSelection from "../assets/phone_entries/speech_script_language_entry.jpg";
+import languageSelection from "../assets/phone_entries/sleepspec_interface_entry_01.png";
 import recordEntry from "../assets/phone_entries/recording_entry.jpg";
 import submitButtonEntry from "../assets/phone_entries/submit_button_entry.jpg";
 import processEntry from "../assets/phone_entries/process_entry.jpg";
@@ -33,8 +33,8 @@ const HowItWorksSection = () => {
                     </div>
                     <div className="flex flex-col gap-4 lg:gap-8">
                         <div className="flex flex-col md:flex-row gap-6 text-secondary rounded-2xl px-5 lg:px-9 py-7 w-full">
-                            <div className="flex flex-col justify-center gap-4">
-                                <div className="flex gap-4 items-center">
+                            <div className="flex flex-col justify-center gap-4 w-6/12">
+                                <div className="flex gap-3 items-center">
                                     <div className="flex bg-secondary rounded-full min-w-[40px] h-[40px] justify-center items-center">
                                         <span className="font-poppins font-semibold text-2xl text-darkBg">
                                             1
@@ -50,13 +50,21 @@ const HowItWorksSection = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="flex flex-col bg-darkLayer text-secondary p-4 rounded-xl gap-3 w-fit md:w-full">
-                                <h4>Language Selection</h4>
-                                <img
-                                    src={languageSelection}
-                                    alt="language_selection"
-                                    className="rounded-lg sm:max-w-[272px]"
-                                />
+                            <div className="relative flex flex-col justify-center items-center text-secondary p-4 rounded-xl gap-3 w-6/12">
+                                <div className="relative">
+                                    {/* Background white div */}
+                                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[45px] shadow-xl w-[96%] h-[97%] bg-white z-20"></div>
+
+                                    {/* Foreground image */}
+                                    <img
+                                        src={languageSelection}
+                                        alt="language_selection"
+                                        className="relative z-30 rounded-lg max-w-[250px] lg:max-w-[300px]"
+                                    />
+                                </div>
+
+                                {/* Entry backdrop */}
+                                <div className="absolute bottom-20 z-0 w-full lg:max-w-[500px] h-[280px] lg:h-[350px] bg-[linear-gradient(145deg,_theme(colors.primaryBlue)_0%,_theme(colors.primary)_50%,_theme(colors.primaryCyan)_100%)] rounded-2xl"></div>
                             </div>
                         </div>
                         <div className="flex flex-col md:flex-row gap-5 bg-white text-darkBg rounded-2xl px-5 lg:px-9 py-7 w-full md:w-8/12">
