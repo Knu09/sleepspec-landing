@@ -7,8 +7,11 @@ import entry_05 from "../assets/phone_entries/how_it_works_entry_05.jpg";
 
 const HowItWorksSection = () => {
     return (
-        <div id="how-it-works" className="px-1 sm:px-5">
+        <div id="how-it-works" className="relative px-1 sm:px-5">
             <div className="container mx-auto py-20">
+                {/* Glowing Ellipse */}
+                <div className="hidden md:flex absolute z-0 left-[60%] top-[150px] w-64 h-64 bg-primary opacity-25 blur-[80px]"></div>
+                <div className="absolute z-0 left-[15%] top-[50px] w-40 h-40 sm:w-64 sm:h-64 bg-primaryBlue opacity-25 blur-[80px]"></div>
                 <div className="flex flex-col gap-10">
                     <div className="flex flex-col items-center gap-6">
                         <div className="rounded-full px-5 py-2 w-fit bg-primaryBlue/25">
