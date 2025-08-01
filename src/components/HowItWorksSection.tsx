@@ -32,94 +32,92 @@ const HowItWorksSection = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-4 lg:gap-8">
-                        <div className="flex flex-col md:flex-row gap-4 lg:gap-8">
-                            <div className="flex flex-col gap-6 bg-white text-darkBg rounded-2xl px-5 lg:px-9 py-7 w-full md:w-4/12">
+                        <div className="flex flex-col md:flex-row gap-6 text-secondary rounded-2xl px-5 lg:px-9 py-7 w-full">
+                            <div className="flex flex-col justify-center gap-4">
+                                <div className="flex gap-4 items-center">
+                                    <div className="flex bg-secondary rounded-full min-w-[40px] h-[40px] justify-center items-center">
+                                        <span className="font-poppins font-semibold text-2xl text-darkBg">
+                                            1
+                                        </span>
+                                    </div>
+                                    <h2>Choose Your Language</h2>
+                                </div>
+                                <div>
+                                    <p className="text-secondary">
+                                        Select your preferred script language
+                                        (English or Filipino) to read from
+                                        before recording begins.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex flex-col bg-darkLayer text-secondary p-4 rounded-xl gap-3 w-fit md:w-full">
+                                <h4>Language Selection</h4>
+                                <img
+                                    src={languageSelection}
+                                    alt="language_selection"
+                                    className="rounded-lg sm:max-w-[272px]"
+                                />
+                            </div>
+                        </div>
+                        <div className="flex flex-col md:flex-row gap-5 bg-white text-darkBg rounded-2xl px-5 lg:px-9 py-7 w-full md:w-8/12">
+                            <div className="flex flex-col gap-6">
+                                <div className="flex flex-col gap-4">
+                                    <div className="flex flex-col lg:flex-row gap-4 lg:items-center">
+                                        <div className="flex bg-[linear-gradient(135deg,_rgba(0,110,255,0.15)_0%,_rgba(120,0,211,0.15)_50%,_rgba(58,200,217,0.15)_100%)] rounded-full w-[40px] lg:min-w-[40px] h-[40px] justify-center items-center">
+                                            <span className="font-poppins font-medium text-2xl">
+                                                2
+                                            </span>
+                                        </div>
+                                        <h2>Record Your Voice</h2>
+                                    </div>
+                                    <div>
+                                        <p className="text-darkBg">
+                                            Read the displayed script naturally—
+                                            the app records your voice for
+                                            analysis.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="flex flex-col bg-darkLayer text-secondary p-4 rounded-xl gap-3">
+                                    <h4>Displayed Script</h4>
+                                    <img
+                                        src={recordEntry}
+                                        alt="record-entry"
+                                        className="rounded-lg"
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="flex flex-col gap-6">
                                 <div className="flex flex-col gap-4">
                                     <div className="flex gap-4">
                                         <div className="flex bg-[linear-gradient(135deg,_rgba(0,110,255,0.15)_0%,_rgba(120,0,211,0.15)_50%,_rgba(58,200,217,0.15)_100%)] rounded-full min-w-[40px] h-[40px] justify-center items-center">
                                             <span className="font-poppins font-medium text-2xl">
-                                                1
+                                                3
                                             </span>
                                         </div>
-                                        <h2>Choose Your Language</h2>
+                                        <h2>Submit the Recording</h2>
                                     </div>
                                     <div>
                                         <p className="text-darkBg">
-                                            Select your preferred script
-                                            language (English or Filipino) to
-                                            read from before recording begins.
+                                            Upload the recorded audio to begin
+                                            the analysis process — no need for
+                                            any manual input.
                                         </p>
                                     </div>
                                 </div>
-                                <div className="flex flex-col bg-darkLayer text-secondary p-4 rounded-xl gap-3 w-fit md:w-full">
-                                    <h4>Language Selection</h4>
+                                <div className="flex flex-col bg-darkLayer text-secondary p-4 rounded-xl gap-3">
+                                    <h4>Submission and Process</h4>
                                     <img
-                                        src={languageSelection}
-                                        alt="language_selection"
-                                        className="rounded-lg sm:max-w-[272px]"
+                                        src={submitButtonEntry}
+                                        alt="submit-button-entry"
+                                        className="rounded-lg"
                                     />
-                                </div>
-                            </div>
-                            <div className="flex flex-col md:flex-row gap-5 bg-white text-darkBg rounded-2xl px-5 lg:px-9 py-7 w-full md:w-8/12">
-                                <div className="flex flex-col gap-6">
-                                    <div className="flex flex-col gap-4">
-                                        <div className="flex flex-col lg:flex-row gap-4 lg:items-center">
-                                            <div className="flex bg-[linear-gradient(135deg,_rgba(0,110,255,0.15)_0%,_rgba(120,0,211,0.15)_50%,_rgba(58,200,217,0.15)_100%)] rounded-full w-[40px] lg:min-w-[40px] h-[40px] justify-center items-center">
-                                                <span className="font-poppins font-medium text-2xl">
-                                                    2
-                                                </span>
-                                            </div>
-                                            <h2>Record Your Voice</h2>
-                                        </div>
-                                        <div>
-                                            <p className="text-darkBg">
-                                                Read the displayed script
-                                                naturally— the app records your
-                                                voice for analysis.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="flex flex-col bg-darkLayer text-secondary p-4 rounded-xl gap-3">
-                                        <h4>Displayed Script</h4>
-                                        <img
-                                            src={recordEntry}
-                                            alt="record-entry"
-                                            className="rounded-lg"
-                                        />
-                                    </div>
-                                </div>
-
-                                <div className="flex flex-col gap-6">
-                                    <div className="flex flex-col gap-4">
-                                        <div className="flex gap-4">
-                                            <div className="flex bg-[linear-gradient(135deg,_rgba(0,110,255,0.15)_0%,_rgba(120,0,211,0.15)_50%,_rgba(58,200,217,0.15)_100%)] rounded-full min-w-[40px] h-[40px] justify-center items-center">
-                                                <span className="font-poppins font-medium text-2xl">
-                                                    3
-                                                </span>
-                                            </div>
-                                            <h2>Submit the Recording</h2>
-                                        </div>
-                                        <div>
-                                            <p className="text-darkBg">
-                                                Upload the recorded audio to
-                                                begin the analysis process — no
-                                                need for any manual input.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="flex flex-col bg-darkLayer text-secondary p-4 rounded-xl gap-3">
-                                        <h4>Submission and Process</h4>
-                                        <img
-                                            src={submitButtonEntry}
-                                            alt="submit-button-entry"
-                                            className="rounded-lg"
-                                        />
-                                        <img
-                                            src={processEntry}
-                                            alt="process-entry"
-                                            className="rounded-lg"
-                                        />
-                                    </div>
+                                    <img
+                                        src={processEntry}
+                                        alt="process-entry"
+                                        className="rounded-lg"
+                                    />
                                 </div>
                             </div>
                         </div>
