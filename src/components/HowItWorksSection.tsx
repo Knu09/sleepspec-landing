@@ -185,7 +185,7 @@ const HowItWorksSection = () => {
                             <div className="relative flex flex-col justify-center items-center text-secondary p-4 rounded-xl gap-3 w-full md:w-6/12 order-2 md:order-1 min-h-[610px]">
                                 {/* Entry backdrop */}
                                 <div className="absolute bottom-20 z-0 w-full max-w-[350px] lg:max-w-[500px] h-[280px] lg:h-[350px] bg-[linear-gradient(145deg,_theme(colors.primaryBlue)_0%,_theme(colors.primary)_50%,_theme(colors.primaryCyan)_100%)] rounded-2xl">
-                                    <div className="absolute left-1 md:left-5 bottom-1">
+                                    <div className="absolute left-1 md:left-5 bottom-1 z-0 transition-all ease-in-out delay-100 duration-500 hover:scale-105 hover:z-40">
                                         {/* Background white div */}
                                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[45px] shadow-xl w-[96%] h-[97%] bg-white z-20"></div>
 
@@ -196,7 +196,7 @@ const HowItWorksSection = () => {
                                             className="relative z-30 rounded-lg max-w-[240px] lg:max-w-[280px]"
                                         />
                                     </div>
-                                    <div className="absolute right-1 sm:right-5 -bottom-10">
+                                    <div className="absolute right-1 sm:right-5 -bottom-10 z-30 transition-all ease-in-out delay-100 duration-500 hover:scale-105 hover:z-40">
                                         {/* Background white div */}
                                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[45px] shadow-xl w-[96%] h-[97%] bg-white z-20"></div>
 
@@ -239,7 +239,7 @@ const HowItWorksSection = () => {
                             <div className="relative flex flex-col justify-center items-center text-secondary p-4 rounded-xl gap-3 w-full md:w-6/12">
                                 {/* Entry backdrop */}
                                 <div className="absolute bottom-20 z-0 w-full max-w-[350px] lg:max-w-[500px] h-[280px] lg:h-[350px] bg-[linear-gradient(145deg,_theme(colors.primaryBlue)_0%,_theme(colors.primary)_50%,_theme(colors.primaryCyan)_100%)] rounded-2xl">
-                                    <div className="absolute right-1 sm:right-5 bottom-1">
+                                    <div className="absolute right-1 sm:right-5 bottom-1 z-0 transition-all ease-in-out delay-100 duration-500 hover:scale-105 hover:z-40">
                                         {/* Background white div */}
                                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[45px] shadow-xl w-[96%] h-[97%] bg-white z-20"></div>
 
@@ -251,7 +251,7 @@ const HowItWorksSection = () => {
                                         />
                                     </div>
 
-                                    <div className="absolute left-1 md:left-5 -bottom-10">
+                                    <div className="absolute left-1 md:left-5 -bottom-10 z-30 transition-all ease-in-out delay-100 duration-500 hover:scale-105 hover:z-40">
                                         {/* Background white div */}
                                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[45px] shadow-xl w-[96%] h-[97%] bg-white z-20"></div>
 
