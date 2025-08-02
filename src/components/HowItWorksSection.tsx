@@ -1,9 +1,14 @@
 import languageSelection from "../assets/phone_entries/sleepspec_interface_entry_01.png";
-import recordEntry from "../assets/phone_entries/recording_entry.jpg";
-import submitButtonEntry from "../assets/phone_entries/submit_button_entry.jpg";
-import processEntry from "../assets/phone_entries/process_entry.jpg";
+import recordEntry from "../assets/phone_entries/sleepspec_interface_entry_03.png";
+import processingEntry from "../assets/phone_entries/sleepspec-processing-entry.png";
 import entry_04 from "../assets/phone_entries/how_it_works_entry_04.jpg";
 import entry_05 from "../assets/phone_entries/how_it_works_entry_05.jpg";
+
+import analysis_entry_01 from "../assets/phone_entries/sleepspec_analysis_entry_01.png";
+import analysis_entry_02 from "../assets/phone_entries/sleepspec_analysis_entry_02.png";
+
+import feature_entry_01 from "../assets/phone_entries/sleepspec_feature_interface_entry_05.png";
+import feature_entry_02 from "../assets/phone_entries/sleepspec_feature_interface_entry_06.png";
 
 const HowItWorksSection = () => {
     return (
@@ -32,22 +37,25 @@ const HowItWorksSection = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-4 lg:gap-8">
-                        <div className="flex flex-col md:flex-row gap-6 text-secondary rounded-2xl px-5 lg:px-9 py-7 w-full">
-                            <div className="flex flex-col justify-center items-center md:items-start text-center md:text-start gap-4 w-full md:w-6/12">
-                                <div className="flex gap-3 items-center">
-                                    <div className="flex bg-secondary rounded-full min-w-[40px] h-[40px] justify-center items-center">
-                                        <span className="font-poppins font-semibold text-2xl text-darkBg">
-                                            1
-                                        </span>
+                        {/* Entry 1 */}
+                        <div className="flex flex-col md:flex-row gap-6 text-secondary rounded-2xl py-7 w-full">
+                            <div className="flex flex-row justify-center md:justify-end items-center w-full md:w-6/12">
+                                <div className="flex flex-col items-center md:items-start gap-4 text-center md:text-start">
+                                    <div className="flex gap-3 items-center">
+                                        <div className="flex bg-secondary rounded-full min-w-[40px] h-[40px] justify-center items-center">
+                                            <span className="font-poppins font-semibold text-2xl text-darkBg">
+                                                1
+                                            </span>
+                                        </div>
+                                        <h2>Choose Your Language</h2>
                                     </div>
-                                    <h2>Choose Your Language</h2>
-                                </div>
-                                <div className="max-w-[450px]">
-                                    <p className="text-secondary">
-                                        Select your preferred script language
-                                        (English or Filipino) to read from
-                                        before recording begins.
-                                    </p>
+                                    <div className="max-w-[450px]">
+                                        <p className="text-secondary">
+                                            Select your preferred script
+                                            language (English or Filipino) to
+                                            read from before recording begins.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             <div className="relative flex flex-col justify-center items-center text-secondary p-4 rounded-xl gap-3 w-full md:w-6/12">
@@ -67,68 +75,188 @@ const HowItWorksSection = () => {
                                 <div className="absolute bottom-20 z-0 w-full max-w-[350px] lg:max-w-[500px] h-[280px] lg:h-[350px] bg-[linear-gradient(145deg,_theme(colors.primaryBlue)_0%,_theme(colors.primary)_50%,_theme(colors.primaryCyan)_100%)] rounded-2xl"></div>
                             </div>
                         </div>
-                        <div className="flex flex-col md:flex-row gap-5 bg-white text-darkBg rounded-2xl px-5 lg:px-9 py-7 w-full md:w-8/12">
-                            <div className="flex flex-col gap-6">
-                                <div className="flex flex-col gap-4">
-                                    <div className="flex flex-col lg:flex-row gap-4 lg:items-center">
-                                        <div className="flex bg-[linear-gradient(135deg,_rgba(0,110,255,0.15)_0%,_rgba(120,0,211,0.15)_50%,_rgba(58,200,217,0.15)_100%)] rounded-full w-[40px] lg:min-w-[40px] h-[40px] justify-center items-center">
-                                            <span className="font-poppins font-medium text-2xl">
-                                                2
-                                            </span>
-                                        </div>
-                                        <h2>Record Your Voice</h2>
+                        {/* Entry 2 */}
+                        <div className="flex flex-col md:flex-row gap-6 text-secondary rounded-2xl py-7 w-full">
+                            <div className="flex flex-col justify-center items-center md:items-start text-center md:text-start gap-4 w-full md:w-6/12 order-1 md:order-2">
+                                <div className="flex gap-3 items-center">
+                                    <div className="flex bg-secondary rounded-full min-w-[40px] h-[40px] justify-center items-center">
+                                        <span className="font-poppins font-semibold text-2xl text-darkBg">
+                                            2
+                                        </span>
                                     </div>
-                                    <div>
-                                        <p className="text-darkBg">
-                                            Read the displayed script naturally—
-                                            the app records your voice for
-                                            analysis.
-                                        </p>
-                                    </div>
+                                    <h2>Record Your Voice</h2>
                                 </div>
-                                <div className="flex flex-col bg-darkLayer text-secondary p-4 rounded-xl gap-3">
-                                    <h4>Displayed Script</h4>
-                                    <img
-                                        src={recordEntry}
-                                        alt="record-entry"
-                                        className="rounded-lg"
-                                    />
+                                <div className="max-w-[450px]">
+                                    <p className="text-secondary">
+                                        Read the displayed script naturally in a
+                                        quiet environment. The system requires
+                                        at least 15 seconds to ensure accurate
+                                        analysis. Once done, you can hold the
+                                        microphone button to stop and proceed.
+                                    </p>
                                 </div>
                             </div>
+                            <div className="relative flex flex-col justify-center items-center text-secondary p-4 rounded-xl gap-3 w-full md:w-6/12 order-2 md:order-1">
+                                <div className="relative">
+                                    {/* Background white div */}
+                                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[45px] shadow-xl w-[96%] h-[97%] bg-white z-20"></div>
 
-                            <div className="flex flex-col gap-6">
-                                <div className="flex flex-col gap-4">
-                                    <div className="flex gap-4">
-                                        <div className="flex bg-[linear-gradient(135deg,_rgba(0,110,255,0.15)_0%,_rgba(120,0,211,0.15)_50%,_rgba(58,200,217,0.15)_100%)] rounded-full min-w-[40px] h-[40px] justify-center items-center">
-                                            <span className="font-poppins font-medium text-2xl">
+                                    {/* Foreground image */}
+                                    <img
+                                        src={recordEntry}
+                                        alt="language_selection"
+                                        className="relative z-30 rounded-lg max-w-[250px] lg:max-w-[300px]"
+                                    />
+                                </div>
+
+                                {/* Entry backdrop */}
+                                <div className="absolute bottom-20 z-0 w-full max-w-[350px] lg:max-w-[500px] h-[280px] lg:h-[350px] bg-[linear-gradient(145deg,_theme(colors.primaryBlue)_0%,_theme(colors.primary)_50%,_theme(colors.primaryCyan)_100%)] rounded-2xl"></div>
+                            </div>
+                        </div>
+
+                        {/* Entry 3 */}
+                        <div className="flex flex-col md:flex-row gap-6 text-secondary rounded-2xl py-7 w-full">
+                            <div className="flex flex-row justify-center md:justify-end items-center w-full md:w-6/12">
+                                <div className="flex flex-col items-center md:items-start gap-4 text-center md:text-start">
+                                    <div className="flex gap-3 items-center">
+                                        <div className="flex bg-secondary rounded-full min-w-[40px] h-[40px] justify-center items-center">
+                                            <span className="font-poppins font-semibold text-2xl text-darkBg">
                                                 3
                                             </span>
                                         </div>
-                                        <h2>Submit the Recording</h2>
+                                        <h2>Audio Processing</h2>
                                     </div>
-                                    <div>
-                                        <p className="text-darkBg">
-                                            Upload the recorded audio to begin
-                                            the analysis process — no need for
-                                            any manual input.
+                                    <div className="max-w-[450px]">
+                                        <p className="text-secondary">
+                                            After submitting your recording, the
+                                            system will display a processing
+                                            interface—visually indicating that
+                                            your voice is being analyzed. No
+                                            further input is needed during this
+                                            step.
                                         </p>
                                     </div>
                                 </div>
-                                <div className="flex flex-col bg-darkLayer text-secondary p-4 rounded-xl gap-3">
-                                    <h4>Submission and Process</h4>
+                            </div>
+                            <div className="relative flex flex-col justify-center items-center text-secondary p-4 rounded-xl gap-3 w-full md:w-6/12">
+                                <div className="relative">
+                                    {/* Background white div */}
+                                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[45px] shadow-xl w-[96%] h-[97%] bg-white z-20"></div>
+
+                                    {/* Foreground image */}
                                     <img
-                                        src={submitButtonEntry}
-                                        alt="submit-button-entry"
-                                        className="rounded-lg"
+                                        src={processingEntry}
+                                        alt="language_selection"
+                                        className="relative z-30 rounded-lg max-w-[250px] lg:max-w-[300px]"
                                     />
-                                    <img
-                                        src={processEntry}
-                                        alt="process-entry"
-                                        className="rounded-lg"
-                                    />
+                                </div>
+
+                                {/* Entry backdrop */}
+                                <div className="absolute bottom-20 z-0 w-full max-w-[350px] lg:max-w-[500px] h-[280px] lg:h-[350px] bg-[linear-gradient(145deg,_theme(colors.primaryBlue)_0%,_theme(colors.primary)_50%,_theme(colors.primaryCyan)_100%)] rounded-2xl"></div>
+                            </div>
+                        </div>
+
+                        {/* Entry 4 */}
+                        <div className="flex flex-col md:flex-row gap-6 text-secondary rounded-2xl py-7 w-full">
+                            <div className="flex flex-col justify-center items-center md:items-start text-center md:text-start gap-4 w-full md:w-6/12 order-1 md:order-2">
+                                <div className="flex gap-3 items-center">
+                                    <div className="flex bg-secondary rounded-full min-w-[40px] h-[40px] justify-center items-center">
+                                        <span className="font-poppins font-semibold text-2xl text-darkBg">
+                                            4
+                                        </span>
+                                    </div>
+                                    <h2>Receive Your Results & Insights</h2>
+                                </div>
+                                <div className="max-w-[450px]">
+                                    <p className="text-secondary">
+                                        In approximately 1-2 minutes, receive a
+                                        detailed classification and personalized
+                                        recommendations based on your result.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="relative flex flex-col justify-center items-center text-secondary p-4 rounded-xl gap-3 w-full md:w-6/12 order-2 md:order-1 min-h-[610px]">
+                                {/* Entry backdrop */}
+                                <div className="absolute bottom-20 z-0 w-full max-w-[350px] lg:max-w-[500px] h-[280px] lg:h-[350px] bg-[linear-gradient(145deg,_theme(colors.primaryBlue)_0%,_theme(colors.primary)_50%,_theme(colors.primaryCyan)_100%)] rounded-2xl">
+                                    <div className="absolute left-1 md:left-5 bottom-1">
+                                        {/* Background white div */}
+                                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[45px] shadow-xl w-[96%] h-[97%] bg-white z-20"></div>
+
+                                        {/* Foreground image */}
+                                        <img
+                                            src={analysis_entry_02}
+                                            alt="language_selection"
+                                            className="relative z-30 rounded-lg max-w-[240px] lg:max-w-[280px]"
+                                        />
+                                    </div>
+                                    <div className="absolute right-1 sm:right-5 -bottom-10">
+                                        {/* Background white div */}
+                                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[45px] shadow-xl w-[96%] h-[97%] bg-white z-20"></div>
+
+                                        {/* Foreground image */}
+                                        <img
+                                            src={analysis_entry_01}
+                                            alt="language_selection"
+                                            className="relative z-30 rounded-lg max-w-[240px] lg:max-w-[280px]"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        {/* Entry 5 */}
+                        <div className="flex flex-col md:flex-row gap-6 text-secondary rounded-2xl py-7 w-full">
+                            <div className="flex flex-row justify-center md:justify-end items-center w-full md:w-6/12 min-h-[610px]">
+                                <div className="flex flex-col items-center md:items-start gap-4 text-center md:text-start">
+                                    <div className="flex gap-3 items-center">
+                                        <div className="flex bg-secondary rounded-full min-w-[40px] h-[40px] justify-center items-center">
+                                            <span className="font-poppins font-semibold text-2xl text-darkBg">
+                                                5
+                                            </span>
+                                        </div>
+                                        <h2>Feature Extraction Preview</h2>
+                                    </div>
+                                    <div className="max-w-[450px]">
+                                        <p className="text-secondary">
+                                            Your voice is automatically
+                                            processed into spectro-temporal
+                                            modulation features, and you can
+                                            freely preview the extracted
+                                            patterns behind the analysis.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="relative flex flex-col justify-center items-center text-secondary p-4 rounded-xl gap-3 w-full md:w-6/12">
+                                {/* Entry backdrop */}
+                                <div className="absolute bottom-20 z-0 w-full max-w-[350px] lg:max-w-[500px] h-[280px] lg:h-[350px] bg-[linear-gradient(145deg,_theme(colors.primaryBlue)_0%,_theme(colors.primary)_50%,_theme(colors.primaryCyan)_100%)] rounded-2xl">
+                                    <div className="absolute right-1 sm:right-5 bottom-1">
+                                        {/* Background white div */}
+                                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[45px] shadow-xl w-[96%] h-[97%] bg-white z-20"></div>
+
+                                        {/* Foreground image */}
+                                        <img
+                                            src={feature_entry_01}
+                                            alt="language_selection"
+                                            className="relative z-30 rounded-lg max-w-[240px] lg:max-w-[280px]"
+                                        />
+                                    </div>
+
+                                    <div className="absolute left-1 md:left-5 -bottom-10">
+                                        {/* Background white div */}
+                                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[45px] shadow-xl w-[96%] h-[97%] bg-white z-20"></div>
+
+                                        {/* Foreground image */}
+                                        <img
+                                            src={feature_entry_02}
+                                            alt="language_selection"
+                                            className="relative z-30 rounded-lg max-w-[240px] lg:max-w-[280px]"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div className="flex flex-col md:flex-row gap-4 lg:gap-8">
                             <div className="flex flex-row gap-5 bg-white text-darkBg rounded-2xl px-5 lg:px-9 py-7 w-full md:w-6/12">
                                 <div className="flex flex-col gap-6">
