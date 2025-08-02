@@ -2,6 +2,8 @@ import sleepspecLogo from "../assets/svg/black_white_logo_sleepspec.svg";
 import PrimaryButton from "./PrimaryButton";
 
 const Footer = () => {
+    const currentDate = new Date();
+    const currentYear = currentDate.getFullYear();
     return (
         <div className="bg-darkBg py-16">
             <div className="container mx-auto px-8 flex flex-col">
@@ -42,7 +44,7 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center sm:items-start gap-8">
                     <div className="flex flex-col sm:flex-row gap-3 order-2 md:order-1">
                         <span className="bg-white/10 p-4 font-medium text-lg rounded-full h-fit w-fit">
-                            © 2025 SleepSpec
+                            © {currentYear} SleepSpec
                         </span>
                         <span className="bg-white/10 p-4 font-medium text-lg rounded-full h-fit w-fit">
                             All Rights Reserved
