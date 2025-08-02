@@ -14,17 +14,17 @@ const HowItWorksSection = () => {
     return (
         <div id="how-it-works" className="relative px-1 sm:px-5">
             <div className="container mx-auto py-20">
-                {/* Glowing Ellipse */}
-                <div className="hidden md:flex absolute z-0 left-[60%] top-[150px] w-64 h-64 bg-primary opacity-25 blur-[80px]"></div>
-                <div className="absolute z-0 left-[15%] top-[50px] w-40 h-40 sm:w-64 sm:h-64 bg-primaryBlue opacity-25 blur-[80px]"></div>
                 <div className="flex flex-col gap-10">
-                    <div className="flex flex-col items-center gap-6">
+                    <div className="relative mx-auto flex flex-col items-center gap-6 max-w-[950px]">
+                        {/* Glowing Ellipse */}
+                        <div className="hidden md:flex absolute z-0 left-[60%] top-[150px] w-64 h-64 bg-primary opacity-25 blur-[80px]"></div>
+                        <div className="absolute z-0 left-0 -top-20 w-40 h-40 sm:w-64 sm:h-64 bg-primaryBlue opacity-25 blur-[80px]"></div>
                         <div className="rounded-full px-5 py-2 w-fit bg-primaryBlue/25">
                             <span className="font-poppins text-primaryBlue font-medium">
                                 HOW IT WORKS
                             </span>
                         </div>
-                        <div className="flex flex-col w-full lg:w-[925px] gap-3 text-center">
+                        <div className="flex flex-col w-full lg:w-[950px] gap-3 text-center">
                             <h1 className="leading-none">
                                 From Voice to Insight in Minutes
                             </h1>
@@ -40,7 +40,9 @@ const HowItWorksSection = () => {
                         {/* Entry 1 */}
                         <div className="flex flex-col md:flex-row gap-6 text-secondary rounded-2xl py-7 w-full">
                             <div className="flex flex-row justify-center md:justify-end items-center w-full md:w-6/12">
-                                <div className="flex flex-col items-center md:items-start gap-4 text-center md:text-start">
+                                <div className="relative flex flex-col items-center md:items-start gap-4 text-center md:text-start">
+                                    {/* Glowing Ellipse */}
+                                    <div className="absolute z-0 right-8 top-10 w-40 h-40 bg-primaryCyan opacity-15 blur-[60px]"></div>
                                     <div className="flex gap-3 items-center">
                                         <div className="flex bg-secondary rounded-full min-w-[40px] h-[40px] justify-center items-center">
                                             <span className="font-poppins font-semibold text-2xl text-darkBg">
@@ -77,7 +79,9 @@ const HowItWorksSection = () => {
                         </div>
                         {/* Entry 2 */}
                         <div className="flex flex-col md:flex-row gap-6 text-secondary rounded-2xl py-7 w-full">
-                            <div className="flex flex-col justify-center items-center md:items-start text-center md:text-start gap-4 w-full md:w-6/12 order-1 md:order-2">
+                            <div className="relative flex flex-col justify-center items-center md:items-start text-center md:text-start gap-4 w-full md:w-6/12 order-1 md:order-2">
+                                {/* Glowing Ellipse */}
+                                <div className="absolute z-0 right-[20%] top-10 w-64 h-64 bg-primary opacity-25 blur-[80px]"></div>
                                 <div className="flex gap-3 items-center">
                                     <div className="flex bg-secondary rounded-full min-w-[40px] h-[40px] justify-center items-center">
                                         <span className="font-poppins font-semibold text-2xl text-darkBg">
@@ -117,7 +121,10 @@ const HowItWorksSection = () => {
                         {/* Entry 3 */}
                         <div className="flex flex-col md:flex-row gap-6 text-secondary rounded-2xl py-7 w-full">
                             <div className="flex flex-row justify-center md:justify-end items-center w-full md:w-6/12">
-                                <div className="flex flex-col items-center md:items-start gap-4 text-center md:text-start">
+                                <div className="relative flex flex-col items-center md:items-start gap-4 text-center md:text-start">
+                                    {/* Glowing Ellipse */}
+                                    <div className="absolute z-0 left-0 top-20 w-40 h-40 bg-primaryCyan opacity-15 blur-[60px]"></div>
+                                    <div className="hidden md:flex absolute z-0 left-[80%] bottom-20 w-40 h-40 sm:w-64 sm:h-64 bg-primaryBlue opacity-25 blur-[80px]"></div>
                                     <div className="flex gap-3 items-center">
                                         <div className="flex bg-secondary rounded-full min-w-[40px] h-[40px] justify-center items-center">
                                             <span className="font-poppins font-semibold text-2xl text-darkBg">
@@ -207,7 +214,9 @@ const HowItWorksSection = () => {
                         {/* Entry 5 */}
                         <div className="flex flex-col md:flex-row gap-6 text-secondary rounded-2xl py-7 w-full">
                             <div className="flex flex-row justify-center md:justify-end items-center w-full md:w-6/12 min-h-[610px]">
-                                <div className="flex flex-col items-center md:items-start gap-4 text-center md:text-start">
+                                <div className="relative flex flex-col items-center md:items-start gap-4 text-center md:text-start">
+                                    {/* Glowing Ellipse */}
+                                    <div className="absolute z-0 left-0 bottom-20 w-40 h-40 bg-primaryCyan opacity-15 blur-[60px]"></div>
                                     <div className="flex gap-3 items-center">
                                         <div className="flex bg-secondary rounded-full min-w-[40px] h-[40px] justify-center items-center">
                                             <span className="font-poppins font-semibold text-2xl text-darkBg">
@@ -253,67 +262,6 @@ const HowItWorksSection = () => {
                                             className="relative z-30 rounded-lg max-w-[240px] lg:max-w-[280px]"
                                         />
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="flex flex-col md:flex-row gap-4 lg:gap-8">
-                            <div className="flex flex-row gap-5 bg-white text-darkBg rounded-2xl px-5 lg:px-9 py-7 w-full md:w-6/12">
-                                <div className="flex flex-col gap-6">
-                                    <div className="flex flex-col gap-4">
-                                        <div className="flex flex-col lg:flex-row gap-4 lg:items-center">
-                                            <div className="flex bg-[linear-gradient(135deg,_rgba(0,110,255,0.15)_0%,_rgba(120,0,211,0.15)_50%,_rgba(58,200,217,0.15)_100%)] rounded-full w-[40px] lg:min-w-[40px] h-[40px] justify-center items-center">
-                                                <span className="font-poppins font-medium text-2xl">
-                                                    4
-                                                </span>
-                                            </div>
-                                            <h2>
-                                                Receive Your Results & Insights
-                                            </h2>
-                                        </div>
-                                        <div>
-                                            <p className="text-darkBg">
-                                                In approximately 1-2 minutes,
-                                                receive a detailed
-                                                classification and personalized
-                                                recommendations based on your
-                                                result.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <img
-                                        src={entry_04}
-                                        alt="entry_04"
-                                        className="rounded-lg"
-                                    />
-                                </div>
-                            </div>
-                            <div className="flex flex-row gap-5 bg-white text-darkBg rounded-2xl px-5 lg:px-9 py-7 w-full md:w-6/12">
-                                <div className="flex flex-col gap-6">
-                                    <div className="flex flex-col gap-4">
-                                        <div className="flex flex-col lg:flex-row gap-4 lg:items-center">
-                                            <div className="flex bg-[linear-gradient(135deg,_rgba(0,110,255,0.15)_0%,_rgba(120,0,211,0.15)_50%,_rgba(58,200,217,0.15)_100%)] rounded-full w-[40px] lg:min-w-[40px] h-[40px] justify-center items-center">
-                                                <span className="font-poppins font-medium text-2xl">
-                                                    5
-                                                </span>
-                                            </div>
-                                            <h2>Feature Extraction Preview</h2>
-                                        </div>
-                                        <div>
-                                            <p className="text-darkBg">
-                                                Your voice is automatically
-                                                processed into spectro-temporal
-                                                modulation features, and you can
-                                                freely preview the extracted
-                                                patterns behind the analysis.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <img
-                                        src={entry_05}
-                                        alt="entry_05"
-                                        className="rounded-lg"
-                                    />
                                 </div>
                             </div>
                         </div>
