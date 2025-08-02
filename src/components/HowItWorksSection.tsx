@@ -211,7 +211,7 @@ const HowItWorksSection = () => {
 
                         {/* Entry 5 */}
                         <div className="flex flex-col md:flex-row gap-6 text-secondary rounded-2xl py-7 w-full">
-                            <div className="flex flex-row justify-center md:justify-end items-center w-full md:w-6/12 min-h-[610px]">
+                            <div className="flex flex-row justify-center md:justify-end items-center w-full md:w-6/12 md:min-h-[610px]">
                                 <div className="relative flex flex-col items-center md:items-start gap-4 text-center md:text-start">
                                     {/* Glowing Ellipse */}
                                     <div className="absolute z-0 left-0 bottom-20 w-40 h-40 bg-primaryCyan opacity-15 blur-[60px]"></div>
@@ -234,7 +234,8 @@ const HowItWorksSection = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="relative flex flex-col justify-center items-center text-secondary p-4 rounded-xl gap-3 w-full md:w-6/12">
+
+                            <div className="relative flex flex-col justify-center items-center text-secondary p-4 rounded-xl gap-3 w-full md:w-6/12 min-h-[610px]">
                                 {/* Entry backdrop */}
                                 <div className="absolute bottom-20 z-0 w-full max-w-[350px] lg:max-w-[500px] h-[280px] lg:h-[350px] bg-[linear-gradient(145deg,_theme(colors.primaryBlue)_0%,_theme(colors.primary)_50%,_theme(colors.primaryCyan)_100%)] rounded-2xl">
                                     <div className="absolute right-1 sm:right-5 bottom-1 z-0 transition-all ease-in-out delay-100 duration-500 hover:scale-105 hover:z-40">
