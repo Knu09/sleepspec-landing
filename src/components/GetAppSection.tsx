@@ -7,7 +7,7 @@ const GetAppSection = () => {
         <div id="get-the-app" className="px-1 sm:px-5 bg-white">
             <div className="container mx-auto py-32 pb-16">
                 <div className="relative flex flex-row bg-darkBg rounded-3xl">
-                    <div className="p-6 sm:p-10 w-full md:w-10/12 lg:w-8/12 xl:w-6/12 bg-darkBg rounded-3xl md:rounded-r-none z-30 bg-opacity-80 backdrop-blur-[2px]">
+                    <div className="p-6 sm:p-10 w-full md:w-10/12 lg:w-8/12 xl:w-6/12 bg-darkBg rounded-3xl md:rounded-r-none z-20 bg-opacity-80 backdrop-blur-[2px]">
                         <div className="absolute -top-6 -left-5">
                             <img
                                 className="w-[250px] sm:w-fit"
@@ -32,7 +32,7 @@ const GetAppSection = () => {
                             <div className="flex flex-col sm:flex-row gap-x-4 gap-y-6 items-center sm:items-start">
                                 <a
                                     href="#"
-                                    className="z-30 flex flex-row items-center gap-4 px-10 py-4 rounded-full text-center"
+                                    className="z-20 flex flex-row items-center gap-4 px-10 py-4 rounded-full text-center"
                                     id="primary-btn"
                                     type="button"
                                 >
@@ -51,7 +51,7 @@ const GetAppSection = () => {
                                 </a>
                                 <div className="relative">
                                     <button
-                                        className="z-30 flex items-center gap-4 px-10 py-4 rounded-full cursor-not-allowed shadow-[3px_4px_10px_rgba(0,0,0,0.25)]"
+                                        className="z-20 flex items-center gap-4 px-10 py-4 rounded-full cursor-not-allowed shadow-[3px_4px_10px_rgba(0,0,0,0.25)]"
                                         id="secondary-btn"
                                     >
                                         <i className="fa-brands fa-apple text-4xl" />
