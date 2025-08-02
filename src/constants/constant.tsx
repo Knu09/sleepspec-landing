@@ -11,7 +11,7 @@ import rafaelPic from "../assets/refael.png";
 export const navItems = [
     { label: "Features", href: "#feature" },
     { label: "How it works", href: "#how-it-works" },
-    { label: "Model", href: "#model" },
+    { label: "Team", href: "#team" },
     { label: "Contact", href: "#contact" },
 ];
 
