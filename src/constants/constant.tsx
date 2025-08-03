@@ -85,11 +85,7 @@ export const teamItems = [
         social: [
             {
                 icon: "fa-brands fa-github",
-                link: "",
-            },
-            {
-                icon: "fa-solid fa-link",
-                link: "",
+                link: "https://github.com/GizakiF",
             },
         ],
     },
@@ -101,11 +97,7 @@ export const teamItems = [
         social: [
             {
                 icon: "fa-brands fa-github",
-                link: "",
-            },
-            {
-                icon: "fa-solid fa-link",
-                link: "",
+                link: "https://github.com/rafaeljacov",
             },
         ],
     },
