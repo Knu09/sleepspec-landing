@@ -61,9 +61,9 @@ const TeamSection = () => {
                                         key={idx}
                                         className="flex flex-col gap-4 items-center pb-4"
                                     >
-                                        <div className="w-[250px] h-[250px] bg-darkBg rounded-t-xl rounded-tl-none aspect-square m-1">
+                                        <div className="w-[250px] h-[250px] bg-darkBg rounded-t-lg rounded-tl-none aspect-square m-1">
                                             <img
-                                                className="w-full h-full rounded-xl object-cover"
+                                                className="w-full h-full rounded-lg object-cover"
                                                 src={item.img}
                                                 alt=""
                                             />
