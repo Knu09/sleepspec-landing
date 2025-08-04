@@ -62,36 +62,38 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div
-                    className={`fixed top-0 right-0 bg-darkLayer w-full sm:w-9/12 h-screen p-12 flex flex-col justify-center items-center md:hidden transition-transform duration-300 ease-in-out ${drawerOpen ? "translate-x-0" : "translate-x-full"}`}
-                    aria-hidden={drawerOpen}
-                    style={{ zIndex: 50 }}
-                >
-                    <ul className="flex flex-col gap-6">
-                        {navItems.map((item, index) => (
-                            <li className="text-lg text-center" key={index}>
-                                <a href={item.href}>{item.label}</a>
+                {drawerOpen && (
+                    <div
+                        className={`fixed top-0 right-0 bg-darkLayer w-full sm:w-9/12 h-screen p-12 flex flex-col justify-center items-center md:hidden transition-transform duration-300 ease-in-out ${drawerOpen ? "translate-x-0" : "translate-x-full pointer-events-none"}`}
+                        aria-hidden={drawerOpen}
+                        style={{ zIndex: 50 }}
+                    >
+                        <ul className="flex flex-col gap-6">
+                            {navItems.map((item, index) => (
+                                <li className="text-lg text-center" key={index}>
+                                    <a href={item.href}>{item.label}</a>
+                                </li>
+                            ))}
+                            {/* Divider */}
+                            <li className="w-full h-[1px] bg-white/20"></li>
+                            <li>
+                                <a
+                                    className="flex gap-3 items-center"
+                                    href="#get-the-app"
+                                >
+                                    <img
+                                        src={downloadIcon}
+                                        className="w-6"
+                                        alt="download"
+                                    />
+                                    <span className="text-lg font-poppins">
+                                        Get the App
+                                    </span>
+                                </a>
                             </li>
-                        ))}
-                        {/* Divider */}
-                        <li className="w-full h-[1px] bg-white/20"></li>
-                        <li>
-                            <a
-                                className="flex gap-3 items-center"
-                                href="#get-the-app"
-                            >
-                                <img
-                                    src={downloadIcon}
-                                    className="w-6"
-                                    alt="download"
-                                />
-                                <span className="text-lg font-poppins">
-                                    Get the App
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                        </ul>
+                    </div>
+                )}
             </nav>
 
             {/* Overlay */}
