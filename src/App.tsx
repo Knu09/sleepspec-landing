@@ -11,15 +11,17 @@ function App() {
     return (
         <>
             <Navbar />
-            <section>
+            <main>
                 <HeroSection />
                 <HighlightOverlay />
                 <FeatureSection />
                 <HowItWorksSection />
                 <TeamSection />
                 <GetAppSection />
+            </main>
+            <footer>
                 <Footer />
-            </section>
+            </footer>
         </>
     );
 }
