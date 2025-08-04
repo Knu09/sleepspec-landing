@@ -8,6 +8,8 @@ import analysis_entry_02 from "../assets/phone_entries/sleepspec_analysis_entry_
 import feature_entry_01 from "../assets/phone_entries/sleepspec_feature_interface_entry_05.png";
 import feature_entry_02 from "../assets/phone_entries/sleepspec_feature_interface_entry_06.png";
 
+import recordingLangOverlay from "../assets/phone_entries/recording_overlay.png";
+
 const HowItWorksSection = () => {
     return (
         <div id="how-it-works" className="relative px-1 sm:px-5">
@@ -60,6 +62,14 @@ const HowItWorksSection = () => {
                             </div>
                             <div className="relative flex flex-col justify-center items-center text-secondary p-4 rounded-xl gap-3 w-full md:w-6/12">
                                 <div className="relative">
+                                    {/* Recording Language Selector Overlay */}
+                                    <div className="hidden sm:flex absolute z-40 top-1/2 left-full -translate-x-1/2 -translate-y-1/6 w-full">
+                                        <img
+                                            className="rounded-lg shadow-lg"
+                                            src={recordingLangOverlay}
+                                            alt="record-lang-overlay"
+                                        />
+                                    </div>
                                     {/* Background white div */}
                                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-[45px] shadow-xl w-[96%] h-[97%] bg-white z-20"></div>
 
@@ -70,7 +80,6 @@ const HowItWorksSection = () => {
                                         className="relative z-30 rounded-lg max-w-[250px] lg:max-w-[300px]"
                                     />
                                 </div>
-
                                 {/* Entry backdrop */}
                                 <div className="absolute bottom-20 z-0 w-full max-w-[350px] lg:max-w-[500px] h-[280px] lg:h-[350px] bg-[linear-gradient(145deg,_theme(colors.primaryBlue)_0%,_theme(colors.primary)_50%,_theme(colors.primaryCyan)_100%)] rounded-2xl"></div>
                             </div>
