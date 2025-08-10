@@ -42,11 +42,11 @@ const Footer = () => {
                 {/* Divider */}
                 <div className="w-full h-[1px] bg-white/25 my-10"></div>
                 <div className="flex flex-col md:flex-row justify-between items-center sm:items-start gap-8">
-                    <div className="flex flex-col sm:flex-row gap-3 order-2 md:order-1">
-                        <span className="bg-white/10 p-4 font-medium text-lg rounded-full h-fit w-fit">
+                    <div className="flex flex-col sm:flex-row  gap-3 items-center sm:items-start order-2 md:order-1">
+                        <span className="bg-white/10 p-4 font-medium sm:text-lg rounded-full h-fit w-fit">
                             © {currentYear} SleepSpec
                         </span>
-                        <span className="bg-white/10 p-4 font-medium text-lg rounded-full h-fit w-fit">
+                        <span className="bg-white/10 p-4 font-medium sm:text-lg rounded-full h-fit w-fit">
                             All Rights Reserved
                         </span>
                     </div>
@@ -56,7 +56,7 @@ const Footer = () => {
 
                             <a href="#" className="flex items-center gap-3">
                                 <i className="fa-regular fa-envelope text-xl"></i>
-                                <p>support@sleepspec.site</p>
+                                <p>sleepspec.support@gmail.com</p>
                             </a>
                             <div className="flex items-center gap-3">
                                 <i className="fa-regular fa-compass text-xl"></i>
