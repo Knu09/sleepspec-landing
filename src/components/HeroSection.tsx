@@ -6,7 +6,7 @@ const HeroSection = () => {
     return (
         <div
             id="hero"
-            className="relative container mx-auto pt-10 pb-32 sm:py-40 md:pb-72 px-2 sm:px-4"
+            className="relative @container h-dvh min-[400px]:h-auto mx-auto pt-10 pb-32 sm:py-40 md:pb-72 px-2 sm:px-4"
         >
             <div className="flex flex-col text-center gap-[clamp(28px,5vw,56px)] mx-auto xl:w-8/12 z-30">
                 <div>
@@ -25,7 +25,7 @@ const HeroSection = () => {
                             your voice.
                         </p>
                     </div>
-                    <div className="flex flex-row flex-wrap items-center justify-start sm:justify-center gap-4">
+                    <div className="flex flex-row flex-wrap items-center justify-center gap-4">
                         <PrimaryButton
                             text="Download APK"
                             href="#"
