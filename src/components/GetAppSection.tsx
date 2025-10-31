@@ -31,7 +31,7 @@ const GetAppSection = () => {
                             {/* Download Buttons */}
                             <div className="flex flex-col sm:flex-row gap-x-4 gap-y-6 items-center sm:items-start">
                                 <a
-                                    href="#"
+                                    href="https://expo.dev/artifacts/eas/sUfjrrXVR6DjFZWBjHUd2b.apk"
                                     className="z-20 flex flex-row items-center gap-4 px-10 py-4 rounded-full text-center"
                                     id="primary-btn"
                                     type="button"
