@@ -28,7 +28,7 @@ const HeroSection = () => {
                     <div className="flex flex-row flex-wrap items-center justify-center gap-4">
                         <PrimaryButton
                             text="Download APK"
-                            href="https://expo.dev/artifacts/eas/sUfjrrXVR6DjFZWBjHUd2b.apk"
+                            href="https://expo.dev/artifacts/eas/4Nv2rbPaGegsAs5iMv2GmY.apk"
                             img={androidIcon}
                         />
                         <SecondaryButton text="Learn More" href="#feature" />
