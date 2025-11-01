@@ -68,7 +68,11 @@ const Footer = () => {
                         <div className="flex flex-col gap-4 text-center sm:text-start">
                             <span className="footer-header">Contact Info</span>
 
-                            <a href="#" className="flex items-center gap-3">
+                            <a
+                                href="mailto:sleepspec.contact@gmail.com?subject=SleepSpec%20Inquiry&body=Hello%20SleepSpec%20Team,"
+                                target="_blank"
+                                className="flex items-center gap-3"
+                            >
                                 <i className="fa-regular fa-envelope text-xl"></i>
                                 <p>sleepspec.contact@gmail.com</p>
                             </a>
