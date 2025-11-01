@@ -1,5 +1,4 @@
 import sleepspecLogo from "../assets/svg/black_white_logo_sleepspec.svg";
-import PrimaryButton from "./PrimaryButton";
 
 const Footer = () => {
     const currentDate = new Date();
