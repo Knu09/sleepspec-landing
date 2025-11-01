@@ -28,14 +28,28 @@ const Footer = () => {
                             <div>
                                 <h4 className="footer-header">Stay Updated</h4>
                             </div>
-                            <div className="flex flex-col sm:flex-row gap-3">
+                            <form
+                                action="https://formspree.io/f/mpwoojkn"
+                                method="POST"
+                                className="flex flex-col sm:flex-row gap-3"
+                            >
                                 <input
                                     className="font-publicsans text-xl bg-secondary/10 px-8 sm:pr-16 py-4 rounded-full border border-white/20 outline-none focus:outline focus:outline-2 focus:outline-white/50 w-full"
                                     placeholder="Enter your Email"
                                     type="text"
+                                    name="email"
+                                    required
                                 />
-                                <PrimaryButton text="Subscribe" href="#" />
-                            </div>
+                                <button
+                                    className="z-10 flex flex-row items-center justify-center min-[400px]:justify-start gap-4 px-6 py-4 rounded-full text-center w-full min-[400px]:w-fit"
+                                    id="primary-btn"
+                                    type="submit"
+                                >
+                                    <span className="text-lg font-publicsans font-medium">
+                                        Subscribe
+                                    </span>
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -56,7 +70,7 @@ const Footer = () => {
 
                             <a href="#" className="flex items-center gap-3">
                                 <i className="fa-regular fa-envelope text-xl"></i>
-                                <p>support@sleepspec.site</p>
+                                <p>sleepspec.contact@gmail.com</p>
                             </a>
                             <div className="flex items-center gap-3">
                                 <i className="fa-regular fa-compass text-xl"></i>
