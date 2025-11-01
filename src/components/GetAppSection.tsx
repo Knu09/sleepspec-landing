@@ -1,5 +1,5 @@
 import transparentLogo from "../assets/svg/transparent_logo_sleepspec_.svg";
-import appEntriesMask from "../assets/phone_entries/sleepspec_entries_mask.png";
+import appEntriesMask from "../assets/phone_entries/sleepspec_entries_mask (updated).png";
 import androidIcon from "../assets/android-icon.png";
 
 const GetAppSection = () => {

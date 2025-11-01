@@ -1,5 +1,5 @@
 import languageSelection from "../assets/phone_entries/sleepspec_interface_entry_01.png";
-import recordEntry from "../assets/phone_entries/sleepspec_interface_entry_03.png";
+import recordEntry from "../assets/phone_entries/sleepspec_interface_entry_03 (updated).png";
 import processingEntry from "../assets/phone_entries/sleepspec-processing-entry.png";
 
 import analysis_entry_01 from "../assets/phone_entries/sleepspec_analysis_entry_01.png";

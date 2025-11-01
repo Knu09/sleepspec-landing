@@ -57,10 +57,10 @@ const Footer = () => {
                 <div className="w-full h-[1px] bg-white/25 my-10"></div>
                 <div className="flex flex-col md:flex-row justify-between items-center sm:items-start gap-8">
                     <div className="flex flex-col sm:flex-row gap-3 order-2 md:order-1">
-                        <span className="bg-white/10 p-4 font-medium text-lg rounded-full h-fit w-fit">
+                        <span className="bg-white/10 p-4 font-medium lg:text-lg rounded-full h-fit w-fit">
                             © {currentYear} SleepSpec
                         </span>
-                        <span className="bg-white/10 p-4 font-medium text-lg rounded-full h-fit w-fit">
+                        <span className="bg-white/10 p-4 font-medium lg:text-lg rounded-full h-fit w-fit">
                             All Rights Reserved
                         </span>
                     </div>
