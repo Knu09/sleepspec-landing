@@ -8,8 +8,8 @@ const HeroSection = () => {
             id="hero"
             className="relative @container h-dvh min-[400px]:h-auto mx-auto pt-10 pb-32 sm:py-40 md:pb-72 px-2 sm:px-4"
         >
-            <div className="flex flex-col text-center gap-[clamp(28px,5vw,56px)] mx-auto xl:w-8/12 z-30">
-                <div>
+            <div className="flex flex-col text-center gap-[clamp(28px,5vw,56px)] mx-auto xl:w-[1200px] z-30 items-center">
+                <div className="">
                     <h1 className="text-start sm:text-center tracking-tighter md:tracking-normal">
                         Detect Sleep Deprivation Through Your Voice with{" "}
                         <span className="bg-[linear-gradient(to_right,_theme(colors.primaryBlue)_0%,_theme(colors.primaryCyan)_50%,_theme(colors.primary)_100%)] text-transparent bg-clip-text">
