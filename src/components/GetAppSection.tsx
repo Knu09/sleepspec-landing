@@ -31,7 +31,7 @@ const GetAppSection = () => {
                             {/* Download Buttons */}
                             <div className="flex flex-col sm:flex-row gap-x-4 gap-y-6 items-center sm:items-start">
                                 <a
-                                    href="https://expo.dev/artifacts/eas/4Nv2rbPaGegsAs5iMv2GmY.apk"
+                                    href="https://github.com/Knu09/SleepSpec/releases/download/1.0.0/SleepSpec-v1.0.0.apk"
                                     className="z-20 flex flex-row items-center gap-4 px-10 py-4 rounded-full text-center"
                                     id="primary-btn"
                                     type="button"

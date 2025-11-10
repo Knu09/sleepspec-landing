@@ -28,7 +28,7 @@ const HeroSection = () => {
                     <div className="flex flex-row flex-wrap items-center justify-center gap-4">
                         <PrimaryButton
                             text="Download APK"
-                            href="https://expo.dev/artifacts/eas/4Nv2rbPaGegsAs5iMv2GmY.apk"
+                            href="https://github.com/Knu09/SleepSpec/releases/download/1.0.0/SleepSpec-v1.0.0.apk"
                             img={androidIcon}
                         />
                         <SecondaryButton text="Learn More" href="#feature" />
