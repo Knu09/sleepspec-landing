@@ -1,8 +1,17 @@
+import { useEffect, useState } from "react";
 import PrimaryButton from "./PrimaryButton";
 import SecondaryButton from "./SecondaryButton";
 import androidIcon from "../assets/android-icon.png";
+import { getLatestApkUrl } from "../utils/github";
 
 const HeroSection = () => {
+    const [apkUrl, setApkUrl] = useState("");
+
+    useEffect(() => {
+        getLatestApkUrl().then((url) => {
+            if (url) setApkUrl(url);
+        });
+    }, []);
     return (
         <div
             id="hero"
@@ -28,7 +37,7 @@ const HeroSection = () => {
                     <div className="flex flex-row flex-wrap items-center justify-center gap-4">
                         <PrimaryButton
                             text="Download APK"
-                            href="https://github.com/Knu09/SleepSpec/releases/download/1.0.0/SleepSpec-v1.0.0.apk"
+                            href={apkUrl}
                             img={androidIcon}
                         />
                         <SecondaryButton text="Learn More" href="#feature" />

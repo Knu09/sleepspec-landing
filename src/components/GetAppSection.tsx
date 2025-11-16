@@ -1,8 +1,17 @@
 import transparentLogo from "../assets/svg/transparent_logo_sleepspec_.svg";
 import appEntriesMask from "../assets/phone_entries/sleepspec_entries_mask.png";
 import androidIcon from "../assets/android-icon.png";
+import { useEffect, useState } from "react";
+import { getLatestApkUrl } from "../utils/github";
 
 const GetAppSection = () => {
+    const [apkUrl, setApkUrl] = useState("");
+
+    useEffect(() => {
+        getLatestApkUrl().then((url) => {
+            if (url) setApkUrl(url);
+        });
+    }, []);
     return (
         <div id="get-the-app" className="px-1 sm:px-5 bg-white">
             <div className="container mx-auto py-32 pb-16">
@@ -31,7 +40,7 @@ const GetAppSection = () => {
                             {/* Download Buttons */}
                             <div className="flex flex-col sm:flex-row gap-x-4 gap-y-6 items-center sm:items-start">
                                 <a
-                                    href="https://github.com/Knu09/SleepSpec/releases/download/1.0.0/SleepSpec-v1.0.0.apk"
+                                    href={apkUrl}
                                     className="z-20 flex flex-row items-center gap-4 px-10 py-4 rounded-full text-center"
                                     id="primary-btn"
                                     type="button"
